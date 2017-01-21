@@ -15,10 +15,14 @@ public:
 	void SetMoveDestination(const FVector DestLocation, int waveSignal);
 	UFUNCTION(BlueprintCallable, Category = "FishCharacter")
 	void IlluminateFish(bool Illuminate);
+	UFUNCTION(BlueprintCallable, Category = "FishCharacter")
+	void Eat();
 	UFUNCTION(BlueprintNativeEvent, Category = "FishCharacter")
 	void OnIlluminate();
 	UFUNCTION(BlueprintNativeEvent, Category = "FishCharacter")
 	void OnDeluminate();
+	UFUNCTION(BlueprintNativeEvent, Category = "FishCharacter")
+	void OnEated();
 
 protected:
 	// Begin PlayerController interface

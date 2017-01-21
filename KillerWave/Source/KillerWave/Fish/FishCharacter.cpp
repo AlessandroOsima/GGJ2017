@@ -92,10 +92,19 @@ void AFishCharacter::IlluminateFish(bool Illuminate)
 	}
 }
 
+void AFishCharacter::Eat()
+{
+	OnEated();
+}
+
 void AFishCharacter::OnIlluminate_Implementation()
 {
 }
 
 void AFishCharacter::OnDeluminate_Implementation()
+{
+}
+
+void AFishCharacter::OnEated_Implementation()
 {
 }
