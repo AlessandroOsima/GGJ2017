@@ -1,0 +1,3 @@
+C:\Users\Domenico\Desktop\GGJ17\KillerWave\Source\KillerWave\KillerWave.Build.cs
+C:\Users\Domenico\Desktop\GGJ17\KillerWave\Source\KillerWave.Target.cs
+C:\Users\Domenico\Desktop\GGJ17\KillerWave\Source\KillerWaveEditor.Target.cs
