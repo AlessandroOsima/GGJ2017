@@ -4,5 +4,14 @@
 # Ignore Solution #
 ##########################
 *.sln
+*.slo
 *.suo
+*.swp
+*.swo
 *.h.pch
+*.gch
+
+Build/*
+Saved/*
+DerivedDataCache/*
+KillerWave/Content/TopDownCPP/*

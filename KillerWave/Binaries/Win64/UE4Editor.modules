@@ -1,7 +1,7 @@
 {
 	"Changelist" : 3249277,
 	"CompatibleChangelist" : 3195953,
-	"BuildId" : "",
+	"BuildId" : "1db59773-22a7-4408-afef-61b6519ce731",
 	"Modules" : 
 	{
 		"KillerWave" : "UE4Editor-KillerWave.dll"
