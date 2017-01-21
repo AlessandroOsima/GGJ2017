@@ -53,6 +53,7 @@ public:
 	UPROPERTY(BlueprintReadOnly, Category = "WaveSource")
 	float StillTime = 0;
 
+	float ExpandTime = 0;
 
 	UPROPERTY(BlueprintReadOnly, Category = "WaveSource")
 	FExpansionDirection Direction = FExpansionDirection::Expanding;

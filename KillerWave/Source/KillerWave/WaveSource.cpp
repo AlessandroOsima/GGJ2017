@@ -35,6 +35,7 @@ void AWaveSource::Tick( float DeltaTime )
 		case FExpansionDirection::Expanding :
 		{
 			UnsclaedSphereRadiusMod = SphereCollision->GetUnscaledSphereRadius() + (ExpansionDelta * DeltaTime * 1);
+			ExpandTime += DeltaTime;
 			break;
 		}
 
@@ -58,6 +59,7 @@ void AWaveSource::Tick( float DeltaTime )
 		if (Direction == FExpansionDirection::Expanding && UnsclaedSphereRadiusMod >= MaxRadius)
 		{
 			UnsclaedSphereRadiusMod = MaxRadius;
+			UE_LOG(LogTemp, Log, TEXT("Expansion Time %f"), ExpandTime)
 			Direction = FExpansionDirection::Still;
 		}
 
@@ -84,6 +86,7 @@ void AWaveSource::ActivatePulse_Implementation()
 		StartingPulse = true;
 		Direction = FExpansionDirection::Expanding;
 		OriginalRadius = SphereCollision->GetUnscaledSphereRadius();
+		ExpandTime = 0;
 	}
 }
 
