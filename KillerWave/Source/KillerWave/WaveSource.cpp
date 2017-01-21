@@ -70,6 +70,7 @@ void AWaveSource::Tick( float DeltaTime )
 			UnsclaedSphereRadiusMod = MaxRadius;
 			UE_LOG(LogTemp, Log, TEXT("Expansion Time %f"), ExpandTime)
 			Direction = FExpansionDirection::Still;
+			WaveSent();
 		}
 
 		if (Direction == FExpansionDirection::Still && StillTime >= StillTimeDuration)
@@ -97,6 +98,11 @@ void AWaveSource::ActivatePulse_Implementation()
 		OriginalRadius = SphereCollision->GetUnscaledSphereRadius();
 		ExpandTime = 0;
 	}
+}
+
+
+void AWaveSource::WaveSent_Implementation()
+{
 }
 
 

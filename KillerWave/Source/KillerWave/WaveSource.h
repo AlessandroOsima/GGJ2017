@@ -32,6 +32,9 @@ public:
 	UFUNCTION(BlueprintNativeEvent, Category = "WaveSource")
 	void ActivatePulse();
 
+	UFUNCTION(BlueprintNativeEvent, Category = "WaveSource")
+	void WaveSent();
+
 	UPROPERTY(BlueprintReadWrite, VisibleAnywhere, Category = "WaveSource")
 	USphereComponent * SphereCollision;
 
