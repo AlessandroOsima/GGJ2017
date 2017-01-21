@@ -10,6 +10,38 @@
 #include "KillerWave.generated.dep.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCode1KillerWave() {}
+FName KILLERWAVE_ActivatePulse = FName(TEXT("ActivatePulse"));
+FName KILLERWAVE_OnDeluminate = FName(TEXT("OnDeluminate"));
+FName KILLERWAVE_OnEated = FName(TEXT("OnEated"));
+FName KILLERWAVE_OnIlluminate = FName(TEXT("OnIlluminate"));
+FName KILLERWAVE_WaveSent = FName(TEXT("WaveSent"));
+	void AFishCharacter::OnDeluminate()
+	{
+		ProcessEvent(FindFunctionChecked(KILLERWAVE_OnDeluminate),NULL);
+	}
+	void AFishCharacter::OnEated()
+	{
+		ProcessEvent(FindFunctionChecked(KILLERWAVE_OnEated),NULL);
+	}
+	void AFishCharacter::OnIlluminate()
+	{
+		ProcessEvent(FindFunctionChecked(KILLERWAVE_OnIlluminate),NULL);
+	}
+	void AFishCharacter::StaticRegisterNativesAFishCharacter()
+	{
+		FNativeFunctionRegistrar::RegisterFunction(AFishCharacter::StaticClass(), "Eat",(Native)&AFishCharacter::execEat);
+		FNativeFunctionRegistrar::RegisterFunction(AFishCharacter::StaticClass(), "IlluminateFish",(Native)&AFishCharacter::execIlluminateFish);
+		FNativeFunctionRegistrar::RegisterFunction(AFishCharacter::StaticClass(), "OnDeluminate",(Native)&AFishCharacter::execOnDeluminate);
+		FNativeFunctionRegistrar::RegisterFunction(AFishCharacter::StaticClass(), "OnEated",(Native)&AFishCharacter::execOnEated);
+		FNativeFunctionRegistrar::RegisterFunction(AFishCharacter::StaticClass(), "OnIlluminate",(Native)&AFishCharacter::execOnIlluminate);
+		FNativeFunctionRegistrar::RegisterFunction(AFishCharacter::StaticClass(), "SetMoveDestination",(Native)&AFishCharacter::execSetMoveDestination);
+	}
+	IMPLEMENT_CLASS(AFishCharacter, 2812370701);
+	void AFishController::StaticRegisterNativesAFishController()
+	{
+		FNativeFunctionRegistrar::RegisterFunction(AFishController::StaticClass(), "SetMoveDestination",(Native)&AFishController::execSetMoveDestination);
+	}
+	IMPLEMENT_CLASS(AFishController, 2252162949);
 	void AKillerWaveCharacter::StaticRegisterNativesAKillerWaveCharacter()
 	{
 	}
@@ -22,22 +54,364 @@ void EmptyLinkFunctionForGeneratedCode1KillerWave() {}
 	{
 	}
 	IMPLEMENT_CLASS(AKillerWavePlayerController, 3978310262);
+static class UEnum* FExpansionDirection_StaticEnum()
+{
+	extern KILLERWAVE_API class UPackage* Z_Construct_UPackage__Script_KillerWave();
+	static class UEnum* Singleton = NULL;
+	if (!Singleton)
+	{
+		extern KILLERWAVE_API class UEnum* Z_Construct_UEnum_KillerWave_FExpansionDirection();
+		Singleton = GetStaticEnum(Z_Construct_UEnum_KillerWave_FExpansionDirection, Z_Construct_UPackage__Script_KillerWave(), TEXT("FExpansionDirection"));
+	}
+	return Singleton;
+}
+static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_FExpansionDirection(FExpansionDirection_StaticEnum, TEXT("/Script/KillerWave"), TEXT("FExpansionDirection"), false, nullptr, nullptr);
+	void AWaveSource::ActivatePulse()
+	{
+		ProcessEvent(FindFunctionChecked(KILLERWAVE_ActivatePulse),NULL);
+	}
+	void AWaveSource::WaveSent()
+	{
+		ProcessEvent(FindFunctionChecked(KILLERWAVE_WaveSent),NULL);
+	}
+	void AWaveSource::StaticRegisterNativesAWaveSource()
+	{
+		FNativeFunctionRegistrar::RegisterFunction(AWaveSource::StaticClass(), "ActivatePulse",(Native)&AWaveSource::execActivatePulse);
+		FNativeFunctionRegistrar::RegisterFunction(AWaveSource::StaticClass(), "WaveSent",(Native)&AWaveSource::execWaveSent);
+	}
+	IMPLEMENT_CLASS(AWaveSource, 3132351636);
+class UScriptStruct* FChannelMapping::StaticStruct()
+{
+	extern KILLERWAVE_API class UPackage* Z_Construct_UPackage__Script_KillerWave();
+	static class UScriptStruct* Singleton = NULL;
+	if (!Singleton)
+	{
+		extern KILLERWAVE_API class UScriptStruct* Z_Construct_UScriptStruct_FChannelMapping();
+		extern KILLERWAVE_API uint32 Get_Z_Construct_UScriptStruct_FChannelMapping_CRC();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FChannelMapping, Z_Construct_UPackage__Script_KillerWave(), TEXT("ChannelMapping"), sizeof(FChannelMapping), Get_Z_Construct_UScriptStruct_FChannelMapping_CRC());
+	}
+	return Singleton;
+}
+static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FChannelMapping(FChannelMapping::StaticStruct, TEXT("/Script/KillerWave"), TEXT("ChannelMapping"), false, nullptr, nullptr);
+static struct FScriptStruct_KillerWave_StaticRegisterNativesFChannelMapping
+{
+	FScriptStruct_KillerWave_StaticRegisterNativesFChannelMapping()
+	{
+		UScriptStruct::DeferCppStructOps(FName(TEXT("ChannelMapping")),new UScriptStruct::TCppStructOps<FChannelMapping>);
+	}
+} ScriptStruct_KillerWave_StaticRegisterNativesFChannelMapping;
+	void ALevelManager::StaticRegisterNativesALevelManager()
+	{
+		FNativeFunctionRegistrar::RegisterFunction(ALevelManager::StaticClass(), "OnMIDIKeyPress",(Native)&ALevelManager::execOnMIDIKeyPress);
+	}
+	IMPLEMENT_CLASS(ALevelManager, 3323046421);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
+	COREUOBJECT_API class UScriptStruct* Z_Construct_UScriptStruct_FVector();
+	ENGINE_API class UClass* Z_Construct_UClass_AActor();
+	ENGINE_API class UClass* Z_Construct_UClass_APlayerController();
 	ENGINE_API class UClass* Z_Construct_UClass_ACharacter();
 	ENGINE_API class UClass* Z_Construct_UClass_UDecalComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameModeBase();
-	ENGINE_API class UClass* Z_Construct_UClass_APlayerController();
+	ENGINE_API class UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
+	ENGINE_API class UClass* Z_Construct_UClass_USphereComponent_NoRegister();
 
+	KILLERWAVE_API class UFunction* Z_Construct_UFunction_AFishCharacter_Eat();
+	KILLERWAVE_API class UFunction* Z_Construct_UFunction_AFishCharacter_IlluminateFish();
+	KILLERWAVE_API class UFunction* Z_Construct_UFunction_AFishCharacter_OnDeluminate();
+	KILLERWAVE_API class UFunction* Z_Construct_UFunction_AFishCharacter_OnEated();
+	KILLERWAVE_API class UFunction* Z_Construct_UFunction_AFishCharacter_OnIlluminate();
+	KILLERWAVE_API class UFunction* Z_Construct_UFunction_AFishCharacter_SetMoveDestination();
+	KILLERWAVE_API class UClass* Z_Construct_UClass_AFishCharacter_NoRegister();
+	KILLERWAVE_API class UClass* Z_Construct_UClass_AFishCharacter();
+	KILLERWAVE_API class UFunction* Z_Construct_UFunction_AFishController_SetMoveDestination();
+	KILLERWAVE_API class UClass* Z_Construct_UClass_AFishController_NoRegister();
+	KILLERWAVE_API class UClass* Z_Construct_UClass_AFishController();
 	KILLERWAVE_API class UClass* Z_Construct_UClass_AKillerWaveCharacter_NoRegister();
 	KILLERWAVE_API class UClass* Z_Construct_UClass_AKillerWaveCharacter();
 	KILLERWAVE_API class UClass* Z_Construct_UClass_AKillerWaveGameMode_NoRegister();
 	KILLERWAVE_API class UClass* Z_Construct_UClass_AKillerWaveGameMode();
 	KILLERWAVE_API class UClass* Z_Construct_UClass_AKillerWavePlayerController_NoRegister();
 	KILLERWAVE_API class UClass* Z_Construct_UClass_AKillerWavePlayerController();
+	KILLERWAVE_API class UEnum* Z_Construct_UEnum_KillerWave_FExpansionDirection();
+	KILLERWAVE_API class UFunction* Z_Construct_UFunction_AWaveSource_ActivatePulse();
+	KILLERWAVE_API class UFunction* Z_Construct_UFunction_AWaveSource_WaveSent();
+	KILLERWAVE_API class UClass* Z_Construct_UClass_AWaveSource_NoRegister();
+	KILLERWAVE_API class UClass* Z_Construct_UClass_AWaveSource();
+	KILLERWAVE_API class UScriptStruct* Z_Construct_UScriptStruct_FChannelMapping();
+	KILLERWAVE_API class UFunction* Z_Construct_UFunction_ALevelManager_OnMIDIKeyPress();
+	KILLERWAVE_API class UClass* Z_Construct_UClass_ALevelManager_NoRegister();
+	KILLERWAVE_API class UClass* Z_Construct_UClass_ALevelManager();
 	KILLERWAVE_API class UPackage* Z_Construct_UPackage__Script_KillerWave();
+	UFunction* Z_Construct_UFunction_AFishCharacter_Eat()
+	{
+		UObject* Outer=Z_Construct_UClass_AFishCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("Eat"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("FishCharacter"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Fish/FishCharacter.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AFishCharacter_IlluminateFish()
+	{
+		struct FishCharacter_eventIlluminateFish_Parms
+		{
+			bool Illuminate;
+		};
+		UObject* Outer=Z_Construct_UClass_AFishCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("IlluminateFish"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(FishCharacter_eventIlluminateFish_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(Illuminate, FishCharacter_eventIlluminateFish_Parms, bool);
+			UProperty* NewProp_Illuminate = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Illuminate"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(Illuminate, FishCharacter_eventIlluminateFish_Parms), 0x0010000000000080, CPP_BOOL_PROPERTY_BITMASK(Illuminate, FishCharacter_eventIlluminateFish_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("FishCharacter"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Fish/FishCharacter.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AFishCharacter_OnDeluminate()
+	{
+		UObject* Outer=Z_Construct_UClass_AFishCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnDeluminate"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08020C00, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("FishCharacter"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Fish/FishCharacter.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AFishCharacter_OnEated()
+	{
+		UObject* Outer=Z_Construct_UClass_AFishCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnEated"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08020C00, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("FishCharacter"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Fish/FishCharacter.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AFishCharacter_OnIlluminate()
+	{
+		UObject* Outer=Z_Construct_UClass_AFishCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnIlluminate"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08020C00, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("FishCharacter"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Fish/FishCharacter.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AFishCharacter_SetMoveDestination()
+	{
+		struct FishCharacter_eventSetMoveDestination_Parms
+		{
+			FVector DestLocation;
+			int32 waveSignal;
+		};
+		UObject* Outer=Z_Construct_UClass_AFishCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SetMoveDestination"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04820401, 65535, sizeof(FishCharacter_eventSetMoveDestination_Parms));
+			UProperty* NewProp_waveSignal = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("waveSignal"), RF_Public|RF_Transient|RF_MarkAsNative) UUnsizedIntProperty(CPP_PROPERTY_BASE(waveSignal, FishCharacter_eventSetMoveDestination_Parms), 0x0010000000000080);
+			UProperty* NewProp_DestLocation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("DestLocation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(DestLocation, FishCharacter_eventSetMoveDestination_Parms), 0x0010000000000082, Z_Construct_UScriptStruct_FVector());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("FishCharacter"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Fish/FishCharacter.h"));
+			MetaData->SetValue(NewProp_DestLocation, TEXT("NativeConst"), TEXT(""));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_AFishCharacter_NoRegister()
+	{
+		return AFishCharacter::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AFishCharacter()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage__Script_KillerWave();
+			OuterClass = AFishCharacter::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20800080;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_AFishCharacter_Eat());
+				OuterClass->LinkChild(Z_Construct_UFunction_AFishCharacter_IlluminateFish());
+				OuterClass->LinkChild(Z_Construct_UFunction_AFishCharacter_OnDeluminate());
+				OuterClass->LinkChild(Z_Construct_UFunction_AFishCharacter_OnEated());
+				OuterClass->LinkChild(Z_Construct_UFunction_AFishCharacter_OnIlluminate());
+				OuterClass->LinkChild(Z_Construct_UFunction_AFishCharacter_SetMoveDestination());
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_CurrentSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CurrentSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(CurrentSpeed, AFishCharacter), 0x0010000000000005);
+				UProperty* NewProp_CurrentSin = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CurrentSin"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(CurrentSin, AFishCharacter), 0x0010000000000005);
+				UProperty* NewProp_MinSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("MinSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(MinSpeed, AFishCharacter), 0x0010000000000005);
+				UProperty* NewProp_SinSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("SinSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(SinSpeed, AFishCharacter), 0x0010000000000005);
+				UProperty* NewProp_DistanceToStop = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("DistanceToStop"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(DistanceToStop, AFishCharacter), 0x0010000000000005);
+				UProperty* NewProp_CurrentDirection = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CurrentDirection"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(CurrentDirection, AFishCharacter), 0x0010000000000005, Z_Construct_UScriptStruct_FVector());
+				UProperty* NewProp_SinusoidalAmplitude = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("SinusoidalAmplitude"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(SinusoidalAmplitude, AFishCharacter), 0x0010000000000005);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(SinusoidalSwim, AFishCharacter, bool);
+				UProperty* NewProp_SinusoidalSwim = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("SinusoidalSwim"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(SinusoidalSwim, AFishCharacter), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(SinusoidalSwim, AFishCharacter), sizeof(bool), true);
+				UProperty* NewProp_AccelerationFactor = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("AccelerationFactor"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(AccelerationFactor, AFishCharacter), 0x0010000000000005);
+				UProperty* NewProp_RotateSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("RotateSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(RotateSpeed, AFishCharacter), 0x0010000000000005);
+				UProperty* NewProp_MoveSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("MoveSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(MoveSpeed, AFishCharacter), 0x0010000000000005);
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AFishCharacter_Eat(), "Eat"); // 577243441
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AFishCharacter_IlluminateFish(), "IlluminateFish"); // 1739275252
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AFishCharacter_OnDeluminate(), "OnDeluminate"); // 3178617186
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AFishCharacter_OnEated(), "OnEated"); // 3826341697
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AFishCharacter_OnIlluminate(), "OnIlluminate"); // 2624616827
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AFishCharacter_SetMoveDestination(), "SetMoveDestination"); // 1947262083
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("Fish/FishCharacter.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Fish/FishCharacter.h"));
+				MetaData->SetValue(NewProp_CurrentSpeed, TEXT("Category"), TEXT("FishCharacter"));
+				MetaData->SetValue(NewProp_CurrentSpeed, TEXT("ModuleRelativePath"), TEXT("Fish/FishCharacter.h"));
+				MetaData->SetValue(NewProp_CurrentSin, TEXT("Category"), TEXT("FishCharacter"));
+				MetaData->SetValue(NewProp_CurrentSin, TEXT("ModuleRelativePath"), TEXT("Fish/FishCharacter.h"));
+				MetaData->SetValue(NewProp_MinSpeed, TEXT("Category"), TEXT("FishCharacter"));
+				MetaData->SetValue(NewProp_MinSpeed, TEXT("ModuleRelativePath"), TEXT("Fish/FishCharacter.h"));
+				MetaData->SetValue(NewProp_SinSpeed, TEXT("Category"), TEXT("FishCharacter"));
+				MetaData->SetValue(NewProp_SinSpeed, TEXT("ModuleRelativePath"), TEXT("Fish/FishCharacter.h"));
+				MetaData->SetValue(NewProp_DistanceToStop, TEXT("Category"), TEXT("FishCharacter"));
+				MetaData->SetValue(NewProp_DistanceToStop, TEXT("ModuleRelativePath"), TEXT("Fish/FishCharacter.h"));
+				MetaData->SetValue(NewProp_CurrentDirection, TEXT("Category"), TEXT("FishCharacter"));
+				MetaData->SetValue(NewProp_CurrentDirection, TEXT("ModuleRelativePath"), TEXT("Fish/FishCharacter.h"));
+				MetaData->SetValue(NewProp_SinusoidalAmplitude, TEXT("Category"), TEXT("FishCharacter"));
+				MetaData->SetValue(NewProp_SinusoidalAmplitude, TEXT("ClampMax"), TEXT("1"));
+				MetaData->SetValue(NewProp_SinusoidalAmplitude, TEXT("ClampMin"), TEXT("0"));
+				MetaData->SetValue(NewProp_SinusoidalAmplitude, TEXT("ModuleRelativePath"), TEXT("Fish/FishCharacter.h"));
+				MetaData->SetValue(NewProp_SinusoidalAmplitude, TEXT("UIMax"), TEXT("1"));
+				MetaData->SetValue(NewProp_SinusoidalAmplitude, TEXT("UIMin"), TEXT("0"));
+				MetaData->SetValue(NewProp_SinusoidalSwim, TEXT("Category"), TEXT("FishCharacter"));
+				MetaData->SetValue(NewProp_SinusoidalSwim, TEXT("ModuleRelativePath"), TEXT("Fish/FishCharacter.h"));
+				MetaData->SetValue(NewProp_AccelerationFactor, TEXT("Category"), TEXT("FishCharacter"));
+				MetaData->SetValue(NewProp_AccelerationFactor, TEXT("ModuleRelativePath"), TEXT("Fish/FishCharacter.h"));
+				MetaData->SetValue(NewProp_RotateSpeed, TEXT("Category"), TEXT("FishCharacter"));
+				MetaData->SetValue(NewProp_RotateSpeed, TEXT("ModuleRelativePath"), TEXT("Fish/FishCharacter.h"));
+				MetaData->SetValue(NewProp_MoveSpeed, TEXT("Category"), TEXT("FishCharacter"));
+				MetaData->SetValue(NewProp_MoveSpeed, TEXT("ModuleRelativePath"), TEXT("Fish/FishCharacter.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AFishCharacter(Z_Construct_UClass_AFishCharacter, &AFishCharacter::StaticClass, TEXT("AFishCharacter"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AFishCharacter);
+	UFunction* Z_Construct_UFunction_AFishController_SetMoveDestination()
+	{
+		struct FishController_eventSetMoveDestination_Parms
+		{
+			FVector DestLocation;
+			int32 waveSignal;
+		};
+		UObject* Outer=Z_Construct_UClass_AFishController();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SetMoveDestination"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04820401, 65535, sizeof(FishController_eventSetMoveDestination_Parms));
+			UProperty* NewProp_waveSignal = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("waveSignal"), RF_Public|RF_Transient|RF_MarkAsNative) UUnsizedIntProperty(CPP_PROPERTY_BASE(waveSignal, FishController_eventSetMoveDestination_Parms), 0x0010000000000080);
+			UProperty* NewProp_DestLocation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("DestLocation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(DestLocation, FishController_eventSetMoveDestination_Parms), 0x0010000000000082, Z_Construct_UScriptStruct_FVector());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("FishController"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Fish/FishController.h"));
+			MetaData->SetValue(NewProp_DestLocation, TEXT("NativeConst"), TEXT(""));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_AFishController_NoRegister()
+	{
+		return AFishController::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AFishController()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_APlayerController();
+			Z_Construct_UPackage__Script_KillerWave();
+			OuterClass = AFishController::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20800284;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_AFishController_SetMoveDestination());
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_RotateSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("RotateSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(RotateSpeed, AFishController), 0x0010000000000005);
+				UProperty* NewProp_MoveSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("MoveSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(MoveSpeed, AFishController), 0x0010000000000005);
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AFishController_SetMoveDestination(), "SetMoveDestination"); // 3385961005
+				OuterClass->ClassConfigName = FName(TEXT("Game"));
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Collision Rendering Utilities|Transformation"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("Fish/FishController.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Fish/FishController.h"));
+				MetaData->SetValue(NewProp_RotateSpeed, TEXT("Category"), TEXT("FishController"));
+				MetaData->SetValue(NewProp_RotateSpeed, TEXT("ModuleRelativePath"), TEXT("Fish/FishController.h"));
+				MetaData->SetValue(NewProp_MoveSpeed, TEXT("Category"), TEXT("FishController"));
+				MetaData->SetValue(NewProp_MoveSpeed, TEXT("ModuleRelativePath"), TEXT("Fish/FishController.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AFishController(Z_Construct_UClass_AFishController, &AFishController::StaticClass, TEXT("AFishController"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AFishController);
 	UClass* Z_Construct_UClass_AKillerWaveCharacter_NoRegister()
 	{
 		return AKillerWaveCharacter::StaticClass();
@@ -158,6 +532,244 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AKillerWavePlayerController(Z_Construct_UClass_AKillerWavePlayerController, &AKillerWavePlayerController::StaticClass, TEXT("AKillerWavePlayerController"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AKillerWavePlayerController);
+	UEnum* Z_Construct_UEnum_KillerWave_FExpansionDirection()
+	{
+		UPackage* Outer=Z_Construct_UPackage__Script_KillerWave();
+		extern uint32 Get_Z_Construct_UEnum_KillerWave_FExpansionDirection_CRC();
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("FExpansionDirection"), 0, Get_Z_Construct_UEnum_KillerWave_FExpansionDirection_CRC(), false);
+		if (!ReturnEnum)
+		{
+			ReturnEnum = new(EC_InternalUseOnlyConstructor, Outer, TEXT("FExpansionDirection"), RF_Public|RF_Transient|RF_MarkAsNative) UEnum(FObjectInitializer());
+			TArray<TPair<FName, uint8>> EnumNames;
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("FExpansionDirection::Expanding")), 0));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("FExpansionDirection::Still")), 1));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("FExpansionDirection::Reducing")), 2));
+			EnumNames.Add(TPairInitializer<FName, uint8>(FName(TEXT("FExpansionDirection::FExpansionDirection_MAX")), 3));
+			ReturnEnum->SetEnums(EnumNames, UEnum::ECppForm::EnumClass);
+			ReturnEnum->CppType = TEXT("FExpansionDirection");
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnEnum->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnEnum, TEXT("BlueprintType"), TEXT("true"));
+			MetaData->SetValue(ReturnEnum, TEXT("IsBlueprintBase"), TEXT("true"));
+			MetaData->SetValue(ReturnEnum, TEXT("ModuleRelativePath"), TEXT("WaveSource.h"));
+#endif
+		}
+		return ReturnEnum;
+	}
+	uint32 Get_Z_Construct_UEnum_KillerWave_FExpansionDirection_CRC() { return 2497028699U; }
+	UFunction* Z_Construct_UFunction_AWaveSource_ActivatePulse()
+	{
+		UObject* Outer=Z_Construct_UClass_AWaveSource();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ActivatePulse"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08020C00, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("WaveSource"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WaveSource.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AWaveSource_WaveSent()
+	{
+		UObject* Outer=Z_Construct_UClass_AWaveSource();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("WaveSent"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08020C00, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("WaveSource"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("WaveSource.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_AWaveSource_NoRegister()
+	{
+		return AWaveSource::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AWaveSource()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage__Script_KillerWave();
+			OuterClass = AWaveSource::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_AWaveSource_ActivatePulse());
+				OuterClass->LinkChild(Z_Construct_UFunction_AWaveSource_WaveSent());
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_RadarMesh = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("RadarMesh"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(RadarMesh, AWaveSource), 0x00100000000a000d, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
+				UProperty* NewProp_OriginalRadius = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("OriginalRadius"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(OriginalRadius, AWaveSource), 0x0010000000000014);
+				UProperty* NewProp_Direction = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Direction"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(Direction, AWaveSource), 0x0010000000000014, Z_Construct_UEnum_KillerWave_FExpansionDirection());
+				UProperty* NewProp_StillTime = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("StillTime"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(StillTime, AWaveSource), 0x0010000000000014);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(StartingPulse, AWaveSource, bool);
+				UProperty* NewProp_StartingPulse = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("StartingPulse"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(StartingPulse, AWaveSource), 0x0010000000000014, CPP_BOOL_PROPERTY_BITMASK(StartingPulse, AWaveSource), sizeof(bool), true);
+				UProperty* NewProp_ScaleDeltaMultiplier = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("ScaleDeltaMultiplier"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(ScaleDeltaMultiplier, AWaveSource), 0x0010000000000005);
+				UProperty* NewProp_StillTimeDuration = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("StillTimeDuration"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(StillTimeDuration, AWaveSource), 0x0010000000000005);
+				UProperty* NewProp_ReductionDelta = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("ReductionDelta"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(ReductionDelta, AWaveSource), 0x0010000000000005);
+				UProperty* NewProp_ExpansionDelta = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("ExpansionDelta"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(ExpansionDelta, AWaveSource), 0x0010000000000005);
+				UProperty* NewProp_MaxRadius = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("MaxRadius"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(MaxRadius, AWaveSource), 0x0010000000000005);
+				UProperty* NewProp_SphereCollision = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("SphereCollision"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(SphereCollision, AWaveSource), 0x00100000000a000d, Z_Construct_UClass_USphereComponent_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AWaveSource_ActivatePulse(), "ActivatePulse"); // 3530900426
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AWaveSource_WaveSent(), "WaveSent"); // 3937972953
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("WaveSource.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("WaveSource.h"));
+				MetaData->SetValue(NewProp_RadarMesh, TEXT("Category"), TEXT("WaveSource"));
+				MetaData->SetValue(NewProp_RadarMesh, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_RadarMesh, TEXT("ModuleRelativePath"), TEXT("WaveSource.h"));
+				MetaData->SetValue(NewProp_OriginalRadius, TEXT("Category"), TEXT("WaveSource"));
+				MetaData->SetValue(NewProp_OriginalRadius, TEXT("ModuleRelativePath"), TEXT("WaveSource.h"));
+				MetaData->SetValue(NewProp_Direction, TEXT("Category"), TEXT("WaveSource"));
+				MetaData->SetValue(NewProp_Direction, TEXT("ModuleRelativePath"), TEXT("WaveSource.h"));
+				MetaData->SetValue(NewProp_StillTime, TEXT("Category"), TEXT("WaveSource"));
+				MetaData->SetValue(NewProp_StillTime, TEXT("ModuleRelativePath"), TEXT("WaveSource.h"));
+				MetaData->SetValue(NewProp_StartingPulse, TEXT("Category"), TEXT("WaveSource"));
+				MetaData->SetValue(NewProp_StartingPulse, TEXT("ModuleRelativePath"), TEXT("WaveSource.h"));
+				MetaData->SetValue(NewProp_ScaleDeltaMultiplier, TEXT("Category"), TEXT("WaveSource"));
+				MetaData->SetValue(NewProp_ScaleDeltaMultiplier, TEXT("ModuleRelativePath"), TEXT("WaveSource.h"));
+				MetaData->SetValue(NewProp_StillTimeDuration, TEXT("Category"), TEXT("WaveSource"));
+				MetaData->SetValue(NewProp_StillTimeDuration, TEXT("ModuleRelativePath"), TEXT("WaveSource.h"));
+				MetaData->SetValue(NewProp_ReductionDelta, TEXT("Category"), TEXT("WaveSource"));
+				MetaData->SetValue(NewProp_ReductionDelta, TEXT("ModuleRelativePath"), TEXT("WaveSource.h"));
+				MetaData->SetValue(NewProp_ExpansionDelta, TEXT("Category"), TEXT("WaveSource"));
+				MetaData->SetValue(NewProp_ExpansionDelta, TEXT("ModuleRelativePath"), TEXT("WaveSource.h"));
+				MetaData->SetValue(NewProp_MaxRadius, TEXT("Category"), TEXT("WaveSource"));
+				MetaData->SetValue(NewProp_MaxRadius, TEXT("ModuleRelativePath"), TEXT("WaveSource.h"));
+				MetaData->SetValue(NewProp_SphereCollision, TEXT("Category"), TEXT("WaveSource"));
+				MetaData->SetValue(NewProp_SphereCollision, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_SphereCollision, TEXT("ModuleRelativePath"), TEXT("WaveSource.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AWaveSource(Z_Construct_UClass_AWaveSource, &AWaveSource::StaticClass, TEXT("AWaveSource"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AWaveSource);
+	UScriptStruct* Z_Construct_UScriptStruct_FChannelMapping()
+	{
+		UPackage* Outer = Z_Construct_UPackage__Script_KillerWave();
+		extern uint32 Get_Z_Construct_UScriptStruct_FChannelMapping_CRC();
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("ChannelMapping"), sizeof(FChannelMapping), Get_Z_Construct_UScriptStruct_FChannelMapping_CRC(), false);
+		if (!ReturnStruct)
+		{
+			ReturnStruct = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ChannelMapping"), RF_Public|RF_Transient|RF_MarkAsNative) UScriptStruct(FObjectInitializer(), NULL, new UScriptStruct::TCppStructOps<FChannelMapping>, EStructFlags(0x00000001));
+			UProperty* NewProp_RangeEnd = new(EC_InternalUseOnlyConstructor, ReturnStruct, TEXT("RangeEnd"), RF_Public|RF_Transient|RF_MarkAsNative) UUnsizedIntProperty(CPP_PROPERTY_BASE(RangeEnd, FChannelMapping), 0x0010000000000805);
+			UProperty* NewProp_RangeStart = new(EC_InternalUseOnlyConstructor, ReturnStruct, TEXT("RangeStart"), RF_Public|RF_Transient|RF_MarkAsNative) UUnsizedIntProperty(CPP_PROPERTY_BASE(RangeStart, FChannelMapping), 0x0010000000000805);
+			UProperty* NewProp_ActorToActivate = new(EC_InternalUseOnlyConstructor, ReturnStruct, TEXT("ActorToActivate"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ActorToActivate, FChannelMapping), 0x0010000000000805, Z_Construct_UClass_AWaveSource_NoRegister());
+			ReturnStruct->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnStruct->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnStruct, TEXT("BlueprintType"), TEXT("true"));
+			MetaData->SetValue(ReturnStruct, TEXT("IsBlueprintBase"), TEXT("true"));
+			MetaData->SetValue(ReturnStruct, TEXT("ModuleRelativePath"), TEXT("LevelManager.h"));
+			MetaData->SetValue(NewProp_RangeEnd, TEXT("Category"), TEXT("ChannelMapping"));
+			MetaData->SetValue(NewProp_RangeEnd, TEXT("ModuleRelativePath"), TEXT("LevelManager.h"));
+			MetaData->SetValue(NewProp_RangeStart, TEXT("Category"), TEXT("ChannelMapping"));
+			MetaData->SetValue(NewProp_RangeStart, TEXT("ModuleRelativePath"), TEXT("LevelManager.h"));
+			MetaData->SetValue(NewProp_ActorToActivate, TEXT("Category"), TEXT("ChannelMapping"));
+			MetaData->SetValue(NewProp_ActorToActivate, TEXT("ModuleRelativePath"), TEXT("LevelManager.h"));
+#endif
+		}
+		return ReturnStruct;
+	}
+	uint32 Get_Z_Construct_UScriptStruct_FChannelMapping_CRC() { return 191485119U; }
+	UFunction* Z_Construct_UFunction_ALevelManager_OnMIDIKeyPress()
+	{
+		struct LevelManager_eventOnMIDIKeyPress_Parms
+		{
+			int32 Channel;
+		};
+		UObject* Outer=Z_Construct_UClass_ALevelManager();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnMIDIKeyPress"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(LevelManager_eventOnMIDIKeyPress_Parms));
+			UProperty* NewProp_Channel = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Channel"), RF_Public|RF_Transient|RF_MarkAsNative) UUnsizedIntProperty(CPP_PROPERTY_BASE(Channel, LevelManager_eventOnMIDIKeyPress_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Level Manager"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("LevelManager.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_ALevelManager_NoRegister()
+	{
+		return ALevelManager::StaticClass();
+	}
+	UClass* Z_Construct_UClass_ALevelManager()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage__Script_KillerWave();
+			OuterClass = ALevelManager::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_ALevelManager_OnMIDIKeyPress());
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(CooldownOver, ALevelManager, bool);
+				UProperty* NewProp_CooldownOver = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CooldownOver"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(CooldownOver, ALevelManager), 0x0010000000000014, CPP_BOOL_PROPERTY_BITMASK(CooldownOver, ALevelManager), sizeof(bool), true);
+				UProperty* NewProp_TimeSinceLastActivation = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("TimeSinceLastActivation"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(TimeSinceLastActivation, ALevelManager), 0x0010000000000014);
+				UProperty* NewProp_CooldownTime = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CooldownTime"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(CooldownTime, ALevelManager), 0x0010000000000005);
+				UProperty* NewProp_ChannelMappings = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("ChannelMappings"), RF_Public|RF_Transient|RF_MarkAsNative) UArrayProperty(CPP_PROPERTY_BASE(ChannelMappings, ALevelManager), 0x0010000000000805);
+				UProperty* NewProp_ChannelMappings_Inner = new(EC_InternalUseOnlyConstructor, NewProp_ChannelMappings, TEXT("ChannelMappings"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000, Z_Construct_UScriptStruct_FChannelMapping());
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(LogMIDIDevices, ALevelManager, bool);
+				UProperty* NewProp_LogMIDIDevices = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("LogMIDIDevices"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(LogMIDIDevices, ALevelManager), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(LogMIDIDevices, ALevelManager), sizeof(bool), true);
+				UProperty* NewProp_MIDIDeviceToUse = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("MIDIDeviceToUse"), RF_Public|RF_Transient|RF_MarkAsNative) UUnsizedIntProperty(CPP_PROPERTY_BASE(MIDIDeviceToUse, ALevelManager), 0x0010000000000005);
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ALevelManager_OnMIDIKeyPress(), "OnMIDIKeyPress"); // 3879755893
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("LevelManager.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("LevelManager.h"));
+				MetaData->SetValue(NewProp_CooldownOver, TEXT("Category"), TEXT("Level Manager"));
+				MetaData->SetValue(NewProp_CooldownOver, TEXT("ModuleRelativePath"), TEXT("LevelManager.h"));
+				MetaData->SetValue(NewProp_TimeSinceLastActivation, TEXT("Category"), TEXT("Level Manager"));
+				MetaData->SetValue(NewProp_TimeSinceLastActivation, TEXT("ModuleRelativePath"), TEXT("LevelManager.h"));
+				MetaData->SetValue(NewProp_CooldownTime, TEXT("Category"), TEXT("Level Manager"));
+				MetaData->SetValue(NewProp_CooldownTime, TEXT("ModuleRelativePath"), TEXT("LevelManager.h"));
+				MetaData->SetValue(NewProp_ChannelMappings, TEXT("Category"), TEXT("Level Manager"));
+				MetaData->SetValue(NewProp_ChannelMappings, TEXT("ModuleRelativePath"), TEXT("LevelManager.h"));
+				MetaData->SetValue(NewProp_LogMIDIDevices, TEXT("Category"), TEXT("Level Manager"));
+				MetaData->SetValue(NewProp_LogMIDIDevices, TEXT("ModuleRelativePath"), TEXT("LevelManager.h"));
+				MetaData->SetValue(NewProp_MIDIDeviceToUse, TEXT("Category"), TEXT("Level Manager"));
+				MetaData->SetValue(NewProp_MIDIDeviceToUse, TEXT("ModuleRelativePath"), TEXT("LevelManager.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_ALevelManager(Z_Construct_UClass_ALevelManager, &ALevelManager::StaticClass, TEXT("ALevelManager"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(ALevelManager);
 	UPackage* Z_Construct_UPackage__Script_KillerWave()
 	{
 		static UPackage* ReturnPackage = NULL;
@@ -166,8 +778,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/KillerWave")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x5D0906D0;
-			Guid.B = 0xA9CC2308;
+			Guid.A = 0x65BDD9DF;
+			Guid.B = 0xD0AAF257;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);
