@@ -6,6 +6,10 @@ public class KillerWave : ModuleRules
 {
 	public KillerWave(TargetInfo Target)
 	{
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HeadMountedDisplay" });
-	}
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HeadMountedDisplay", "MIDIDevice" });
+        PrivateDependencyModuleNames.AddRange(new string[] { "MIDIDevice" });
+        PrivateIncludePathModuleNames.AddRange(new string[] { "MIDIDevice" });
+        PublicIncludePathModuleNames.AddRange(new string[] { "MIDIDevice" });
+
+    }
 }
