@@ -2,7 +2,7 @@
 	"TargetName" : "KillerWaveEditor",
 	"Platform" : "Win64",
 	"Configuration" : "Development",
-	"BuildId" : "1db59773-22a7-4408-afef-61b6519ce731",
+	"BuildId" : "a6dbf540-90a5-4327-bb46-8234feaa2d08",
 	"Version" : 
 	{
 		"MajorVersion" : 4,
@@ -160,6 +160,10 @@
 		},
 		{
 			"Path" : "$(EngineDir)/Plugins/Runtime/ExampleDeviceProfileSelector/ExampleDeviceProfileSelector.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/MIDIDevice/MIDIDevice.uplugin",
 			"Type" : "UFS"
 		},
 		{
