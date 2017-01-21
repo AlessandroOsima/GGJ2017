@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="..\..\KillerWave.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{FD417B08-E3C4-4A1F-A1FC-F234FAD95C4D}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\KillerWave.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\KillerWaveEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{263572FF-2BAE-485E-AF63-493D9DB7C6EA}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultInput.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\KillerWave">
+			<UniqueIdentifier>{39007E2B-BCFF-4CC7-8147-16866F798F25}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\KillerWave\KillerWave.Build.cs">
+			<Filter>Source\KillerWave</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\KillerWave\KillerWave.cpp">
+			<Filter>Source\KillerWave</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\KillerWave\KillerWave.h">
+			<Filter>Source\KillerWave</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\KillerWave\KillerWaveCharacter.cpp">
+			<Filter>Source\KillerWave</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\KillerWave\KillerWaveCharacter.h">
+			<Filter>Source\KillerWave</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\KillerWave\KillerWaveGameMode.cpp">
+			<Filter>Source\KillerWave</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\KillerWave\KillerWaveGameMode.h">
+			<Filter>Source\KillerWave</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\KillerWave\KillerWavePlayerController.cpp">
+			<Filter>Source\KillerWave</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\KillerWave\KillerWavePlayerController.h">
+			<Filter>Source\KillerWave</Filter>
+		</ClInclude >
+	</ItemGroup>
+</Project>

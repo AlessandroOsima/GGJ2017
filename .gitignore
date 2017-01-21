@@ -4,3 +4,5 @@
 # Ignore Solution #
 ##########################
 *.sln
+*.suo
+*.h.pch

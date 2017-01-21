@@ -1,0 +1,838 @@
+﻿Log file open, 01/21/17 09:55:16
+LogInit:Display: Running engine for game: KillerWave
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(1524471403) SRandInit(1524471403).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.095063
+LogPluginManager: Loaded Plugin Paper2D, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/2D/Paper2D/Paper2D.uplugin
+LogPluginManager: Loaded Plugin LightPropagationVolume, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Blendables/LightPropagationVolume/LightPropagationVolume.uplugin
+LogPluginManager: Loaded Plugin BlankPlugin, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Developer/BlankPlugin/BlankPlugin.uplugin
+LogPluginManager: Loaded Plugin CodeLiteSourceCodeAccess, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Developer/CodeLiteSourceCodeAccess/CodeLiteSourceCodeAccess.uplugin
+LogPluginManager: Loaded Plugin GitSourceControl, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Developer/GitSourceControl/GitSourceControl.uplugin
+LogPluginManager: Loaded Plugin KDevelopSourceCodeAccess, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Developer/KDevelopSourceCodeAccess/KDevelopSourceCodeAccess.uplugin
+LogPluginManager: Loaded Plugin NullSourceCodeAccess, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Developer/NullSourceCodeAccess/NullSourceCodeAccess.uplugin
+LogPluginManager: Loaded Plugin OneSkyLocalizationService, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Developer/OneSkyLocalizationService/OneSkyLocalizationService.uplugin
+LogPluginManager: Loaded Plugin PerforceSourceControl, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Developer/PerforceSourceControl/PerforceSourceControl.uplugin
+LogPluginManager: Loaded Plugin SubversionSourceControl, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Developer/SubversionSourceControl/SubversionSourceControl.uplugin
+LogPluginManager: Loaded Plugin UObjectPlugin, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Developer/UObjectPlugin/UObjectPlugin.uplugin
+LogPluginManager: Loaded Plugin VisualStudioSourceCodeAccess, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Developer/VisualStudioSourceCodeAccess/VisualStudioSourceCodeAccess.uplugin
+LogPluginManager: Loaded Plugin XCodeSourceCodeAccess, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Developer/XCodeSourceCodeAccess/XCodeSourceCodeAccess.uplugin
+LogPluginManager: Loaded Plugin AudioCapture, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Editor/AudioCapture/AudioCapture.uplugin
+LogPluginManager: Loaded Plugin EpicSurvey, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Editor/EpicSurvey/EpicSurvey.uplugin
+LogPluginManager: Loaded Plugin MacGraphicsSwitching, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Editor/MacGraphicsSwitching/MacGraphicsSwitching.uplugin
+LogPluginManager: Loaded Plugin MobileLauncherProfileWizard, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Editor/MobileLauncherProfileWizard/MobileLauncherProfileWizard.uplugin
+LogPluginManager: Loaded Plugin PluginBrowser, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Editor/PluginBrowser/PluginBrowser.uplugin
+LogPluginManager: Loaded Plugin SpeedTreeImporter, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Editor/SpeedTreeImporter/SpeedTreeImporter.uplugin
+LogPluginManager: Loaded Plugin SuperSearchEditor, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Editor/SuperSearchEditor/SuperSearchEditor.uplugin
+LogPluginManager: Loaded Plugin AlembicImporter, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Experimental/AlembicImporter/AlembicImporter.uplugin
+LogPluginManager: Loaded Plugin BlueprintStats, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Experimental/BlueprintStats/BlueprintStats.uplugin
+LogPluginManager: Loaded Plugin CharacterAI, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Experimental/CharacterAI/CharacterAI.uplugin
+LogPluginManager: Loaded Plugin CodeEditor, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Experimental/CodeEditor/CodeEditor.uplugin
+LogPluginManager: Loaded Plugin CodeView, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Experimental/CodeView/CodeView.uplugin
+LogPluginManager: Loaded Plugin HTML5Networking, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Experimental/HTML5Networking/HTML5Networking.uplugin
+LogPluginManager: Loaded Plugin OSVR, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Experimental/OSVR/OSVR.uplugin
+LogPluginManager: Loaded Plugin Phya, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Experimental/Phya/Phya.uplugin
+LogPluginManager: Loaded Plugin SignificanceManager, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Experimental/SignificanceManager/SignificanceManager.uplugin
+LogPluginManager: Loaded Plugin SimpleHMD, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Experimental/SimpleHMD/SimpleHMD.uplugin
+LogPluginManager: Loaded Plugin StereoPanorama, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Experimental/StereoPanorama/StereoPanorama.uplugin
+LogPluginManager: Loaded Plugin StructBox, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Experimental/StructBox/StructBox.uplugin
+LogPluginManager: Loaded Plugin MidiAsset, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Marketplace/MidiAsset/MidiAsset.uplugin
+LogPluginManager: Loaded Plugin AndroidMedia, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Media/AndroidMedia/AndroidMedia.uplugin
+LogPluginManager: Loaded Plugin AvfMedia, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Media/AvfMedia/AvfMedia.uplugin
+LogPluginManager: Loaded Plugin MediaPlayerEditor, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Media/MediaPlayerEditor/MediaPlayerEditor.uplugin
+LogPluginManager: Loaded Plugin WmfMedia, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Media/WmfMedia/WmfMedia.uplugin
+LogPluginManager: Loaded Plugin MessagingDebugger, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Messaging/MessagingDebugger/MessagingDebugger.uplugin
+LogPluginManager: Loaded Plugin TcpMessaging, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Messaging/TcpMessaging/TcpMessaging.uplugin
+LogPluginManager: Loaded Plugin UdpMessaging, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Messaging/UdpMessaging/UdpMessaging.uplugin
+LogPluginManager: Loaded Plugin LevelSequenceEditor, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/MovieScene/LevelSequenceEditor/LevelSequenceEditor.uplugin
+LogPluginManager: Loaded Plugin MatineeToLevelSequence, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/MovieScene/MatineeToLevelSequence/MatineeToLevelSequence.uplugin
+LogPluginManager: Loaded Plugin NetcodeUnitTest, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/NetcodeUnitTest/NetcodeUnitTest/NetcodeUnitTest.uplugin
+LogPluginManager: Loaded Plugin NUTUnrealEngine4, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/NetcodeUnitTest/NUTUnrealEngine4/NUTUnrealEngine4.uplugin
+LogPluginManager: Loaded Plugin OnlineSubsystemGameCircle, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Online/Android/OnlineSubsystemGameCircle/OnlineSubsystemGameCircle.uplugin
+LogPluginManager: Loaded Plugin OnlineSubsystemGooglePlay, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Online/Android/OnlineSubsystemGooglePlay/OnlineSubsystemGooglePlay.uplugin
+LogPluginManager: Loaded Plugin OnlineSubsystemIOS, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Online/IOS/OnlineSubsystemIOS/OnlineSubsystemIOS.uplugin
+LogPluginManager: Loaded Plugin OnlineFramework, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Online/OnlineFramework/OnlineFramework.uplugin
+LogPluginManager: Loaded Plugin OnlineSubsystem, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Online/OnlineSubsystem/OnlineSubsystem.uplugin
+LogPluginManager: Loaded Plugin OnlineSubsystemAmazon, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Online/OnlineSubsystemAmazon/OnlineSubsystemAmazon.uplugin
+LogPluginManager: Loaded Plugin OnlineSubsystemFacebook, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Online/OnlineSubsystemFacebook/OnlineSubsystemFacebook.uplugin
+LogPluginManager: Loaded Plugin OnlineSubsystemNull, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Online/OnlineSubsystemNull/OnlineSubsystemNull.uplugin
+LogPluginManager: Loaded Plugin OnlineSubsystemOculus, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Online/OnlineSubsystemOculus/OnlineSubsystemOculus.uplugin
+LogPluginManager: Loaded Plugin OnlineSubsystemSteam, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Online/OnlineSubsystemSteam/OnlineSubsystemSteam.uplugin
+LogPluginManager: Loaded Plugin OnlineSubsystemUtils, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Online/OnlineSubsystemUtils/OnlineSubsystemUtils.uplugin
+LogPluginManager: Loaded Plugin IOSTapJoy, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Runtime/Advertising/IOSTapJoy/IOSTapJoy.uplugin
+LogPluginManager: Loaded Plugin AnalyticsBlueprintLibrary, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Runtime/Analytics/AnalyticsBlueprintLibrary/AnalyticsBlueprintLibrary.uplugin
+LogPluginManager: Loaded Plugin AnalyticsMulticast, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Runtime/Analytics/AnalyticsMulticast/AnalyticsMulticast.uplugin
+LogPluginManager: Loaded Plugin Apsalar, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Runtime/Analytics/Apsalar/Apsalar.uplugin
+LogPluginManager: Loaded Plugin FileLogging, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Runtime/Analytics/FileLogging/FileLogging.uplugin
+LogPluginManager: Loaded Plugin Flurry, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Runtime/Analytics/Flurry/Flurry.uplugin
+LogPluginManager: Loaded Plugin AndroidDeviceProfileSelector, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Runtime/AndroidDeviceProfileSelector/AndroidDeviceProfileSelector.uplugin
+LogPluginManager: Loaded Plugin AndroidMoviePlayer, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Runtime/AndroidMoviePlayer/AndroidMoviePlayer.uplugin
+LogPluginManager: Loaded Plugin AppleMoviePlayer, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Runtime/AppleMoviePlayer/AppleMoviePlayer.uplugin
+LogPluginManager: Loaded Plugin ArchVisCharacter, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Runtime/ArchVisCharacter/ArchVisCharacter.uplugin
+LogPluginManager: Loaded Plugin CableComponent, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Runtime/CableComponent/CableComponent.uplugin
+LogPluginManager: Loaded Plugin CustomMeshComponent, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Runtime/CustomMeshComponent/CustomMeshComponent.uplugin
+LogPluginManager: Loaded Plugin ExampleDeviceProfileSelector, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Runtime/ExampleDeviceProfileSelector/ExampleDeviceProfileSelector.uplugin
+LogPluginManager: Loaded Plugin GearVR, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Runtime/GearVR/GearVR.uplugin
+LogPluginManager: Loaded Plugin GoogleVRController, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Runtime/GoogleVR/GoogleVRController/GoogleVRController.uplugin
+LogPluginManager: Loaded Plugin GoogleVRHMD, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Runtime/GoogleVR/GoogleVRHMD/GoogleVRHMD.uplugin
+LogPluginManager: Loaded Plugin IOSDeviceProfileSelector, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Runtime/IOSDeviceProfileSelector/IOSDeviceProfileSelector.uplugin
+LogPluginManager: Loaded Plugin LeapMotion, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Runtime/LeapMotion/LeapMotion.uplugin
+LogPluginManager: Loaded Plugin LinuxDeviceProfileSelector, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Runtime/LinuxDeviceProfileSelector/LinuxDeviceProfileSelector.uplugin
+LogPluginManager: Loaded Plugin MIDIDevice, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Runtime/MIDIDevice/MIDIDevice.uplugin
+LogPluginManager: Loaded Plugin MobilePatchingUtils, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Runtime/MobilePatchingUtils/MobilePatchingUtils.uplugin
+LogPluginManager: Loaded Plugin Ansel, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Runtime/Nvidia/Ansel/Ansel.uplugin
+LogPluginManager: Loaded Plugin OculusAudio, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Runtime/OculusAudio/OculusAudio.uplugin
+LogPluginManager: Loaded Plugin OculusInput, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Runtime/OculusInput/OculusInput.uplugin
+LogPluginManager: Loaded Plugin OculusLibrary, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Runtime/OculusLibrary/OculusLibrary.uplugin
+LogPluginManager: Loaded Plugin OculusRift, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Runtime/OculusRift/OculusRift.uplugin
+LogPluginManager: Loaded Plugin Oodle, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Runtime/PacketHandlers/CompressionComponents/Oodle/Oodle.uplugin
+LogPluginManager: Loaded Plugin ProceduralMeshComponent, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Runtime/ProceduralMeshComponent/ProceduralMeshComponent.uplugin
+LogPluginManager: Loaded Plugin SoundMod, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Runtime/SoundMod/SoundMod.uplugin
+LogPluginManager: Loaded Plugin SoundVisualizations, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Runtime/SoundVisualizations/SoundVisualizations.uplugin
+LogPluginManager: Loaded Plugin SteamController, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Runtime/Steam/SteamController/SteamController.uplugin
+LogPluginManager: Loaded Plugin SteamVR, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Runtime/Steam/SteamVR/SteamVR.uplugin
+LogPluginManager: Loaded Plugin WebBrowserWidget, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Runtime/WebBrowserWidget/WebBrowserWidget.uplugin
+LogPluginManager: Loaded Plugin WindowsDeviceProfileSelector, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Runtime/WindowsDeviceProfileSelector/WindowsDeviceProfileSelector.uplugin
+LogPluginManager: Loaded Plugin WindowsMoviePlayer, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Runtime/WindowsMoviePlayer/WindowsMoviePlayer.uplugin
+LogPluginManager: Loaded Plugin ScriptPlugin, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/ScriptPlugin/ScriptPlugin.uplugin
+LogPluginManager: Loaded Plugin SlateRemote, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Slate/SlateRemote/SlateRemote.uplugin
+LogPluginManager: Loaded Plugin EditorTests, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Tests/EditorTests/EditorTests.uplugin
+LogPluginManager: Loaded Plugin FbxAutomationTestBuilder, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Tests/FbxAutomationTestBuilder/FbxAutomationTestBuilder.uplugin
+LogPluginManager: Loaded Plugin FunctionalTestingEditor, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Tests/FunctionalTestingEditor/FunctionalTestingEditor.uplugin
+LogPluginManager: Loaded Plugin RuntimeTests, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Tests/RuntimeTests/RuntimeTests.uplugin
+LogPluginManager: Loaded Plugin ScreenshotTools, From C:/Program Files (x86)/Epic Games/4.14/Engine/Plugins/Tests/ScreenshotTools/ScreenshotTools.uplugin
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.14-CL-3249277
+LogInit: Engine Version: 4.14.3-3249277+++UE4+Release-4.14
+LogInit: Compatible Engine Version: 4.14.0-3195953+++UE4+Release-4.14
+LogInit: Net CL: 3195953
+LogDevObjectVersion: Number of dev versions registered: 13
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 7
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 1
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 8
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 17
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 1
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogInit: Compiled (64-bit): Jan  6 2017 10:49:43
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.14
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.14/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.01.21-08.55.17:480][  0]LogInit: Selected Device Profile: [Windows]
+[2017.01.21-08.55.17:480][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.01.21-08.55.17:682][  0]LogInit: Computer: CLARISSA
+[2017.01.21-08.55.17:682][  0]LogInit: User: Domenico
+[2017.01.21-08.55.17:682][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.01.21-08.55.17:682][  0]LogInit: High frequency timer resolution =2.338342 MHz
+[2017.01.21-08.55.17:682][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2017.01.21-08.55.17:682][  0]LogMemory: Platform Memory Stats for Windows
+[2017.01.21-08.55.17:682][  0]LogMemory: Process Physical Memory: 264.70 MB used, 264.70 MB peak
+[2017.01.21-08.55.17:682][  0]LogMemory: Process Virtual Memory: 262.71 MB used, 262.71 MB peak
+[2017.01.21-08.55.17:682][  0]LogMemory: Physical Memory: 5792.39 MB used,  2331.64 MB free, 8124.02 MB total
+[2017.01.21-08.55.17:682][  0]LogMemory: Virtual Memory: 676.53 MB used,  2331.64 MB free, 134217728.00 MB total
+[2017.01.21-08.55.17:713][  0]LogTextLocalizationManager: No translations for ('it-IT') exist, falling back to 'en' for localization and internationalization data.
+[2017.01.21-08.55.18:441][  0]LogD3D11RHI: D3D11 adapters:
+[2017.01.21-08.55.18:472][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GT 740M        ' (Feature Level 11_0)
+[2017.01.21-08.55.18:472][  0]LogD3D11RHI:       1997/0/4062 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2017.01.21-08.55.18:478][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 4600' (Feature Level 11_0)
+[2017.01.21-08.55.18:478][  0]LogD3D11RHI:       112/0/2048 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2017.01.21-08.55.18:480][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.01.21-08.55.18:480][  0]LogD3D11RHI:       0/0/4062 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.01.21-08.55.18:480][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.01.21-08.55.18:487][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.01.21-08.55.18:487][  0]LogD3D11RHI:     GPU DeviceId: 0x1292 (for the marketing name, search the web for "GPU Device Id")
+[2017.01.21-08.55.18:487][  0]LogWindows: EnumDisplayDevices:
+[2017.01.21-08.55.18:487][  0]LogWindows:    0. 'Intel(R) HD Graphics 4600' (P:1 D:1)
+[2017.01.21-08.55.18:487][  0]LogWindows:    1. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2017.01.21-08.55.18:488][  0]LogWindows:    2. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2017.01.21-08.55.18:488][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2017.01.21-08.55.18:488][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GT 740M        
+[2017.01.21-08.55.18:488][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2017.01.21-08.55.18:488][  0]LogD3D11RHI:      Driver Date: Unknown
+[2017.01.21-08.55.18:488][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.01.21-08.55.18:504][  0]LogD3D11RHI:Warning: Timestamp queries are currently disabled on this hardware due to instability. Realtime GPU stats will not be available. You can override this behaviour by setting r.NVIDIATimestampWorkaround to 0
+[2017.01.21-08.55.18:505][  0]LogD3D11RHI: Async texture creation enabled
+[2017.01.21-08.55.18:518][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.01.21-08.55.18:519][  0]LogShaderCompilers: Guid format shader working directory is -8 characters bigger than the processId version (../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Intermediate/Shaders/WorkingDirectory/2164/).
+[2017.01.21-08.55.18:519][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Domenico/AppData/Local/Temp/UnrealShaderWorkingDir/D069C5BD47C6AEEF493A48988F5E5C34/'.
+[2017.01.21-08.55.18:519][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.01.21-08.55.19:771][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.01.21-08.55.19:846][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.01.21-08.55.19:916][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.01.21-08.55.19:983][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.01.21-08.55.20:077][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.01.21-08.55.20:142][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.01.21-08.55.20:218][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.01.21-08.55.20:323][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.01.21-08.55.20:381][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.01.21-08.55.20:468][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.01.21-08.55.20:580][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.01.21-08.55.20:645][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.01.21-08.55.20:746][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.01.21-08.55.20:817][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.01.21-08.55.20:928][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.01.21-08.55.21:075][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.01.21-08.55.21:075][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.01.21-08.55.21:119][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.01.21-08.55.21:246][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.01.21-08.55.21:287][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.01.21-08.55.21:355][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.01.21-08.55.21:422][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.01.21-08.55.21:480][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.01.21-08.55.21:576][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.01.21-08.55.21:576][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.01.21-08.55.22:097][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.01.21-08.55.22:155][  0]LogDerivedDataCache: Loaded boot cache 0.06s 51MB C:/Users/Domenico/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc.
+[2017.01.21-08.55.22:155][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Domenico/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc
+[2017.01.21-08.55.22:155][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.01.21-08.55.22:155][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.01.21-08.55.22:155][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.01.21-08.55.22:155][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.01.21-08.55.22:173][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.01.21-08.55.22:186][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Domenico/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.01.21-08.55.22:419][  0]LogInit: Selected Device Profile: [Windows]
+[2017.01.21-08.55.22:422][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.01.21-08.55.22:658][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.01.21-08.55.22:710][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.01.21-08.55.22:801][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.01.21-08.55.22:801][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.01.21-08.55.22:801][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.01.21-08.55.23:540][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3195953, ProjectName: killerwave, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 550939559
+[2017.01.21-08.55.23:610][  0]LogAssetRegistry: FAssetRegistry took 0.0219 seconds to start up
+[2017.01.21-08.55.23:698][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 1 prioritized culture(s) in 0.056422 seconds
+[2017.01.21-08.55.23:708][  0]LogUObjectArray: 31946 objects as part of root set at end of initial load.
+[2017.01.21-08.55.23:708][  0]LogUObjectAllocator: 6935840 out of 0 bytes used by permanent object pool.
+[2017.01.21-08.55.23:708][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.01.21-08.55.23:795][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.01.21-08.55.24:897][  0]LogSlate: Using Freetype 2.6.0
+[2017.01.21-08.55.24:897][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.01.21-08.55.24:897][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.01.21-08.56.38:816][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.01.21-08.56.38:882][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.01.21-08.56.41:579][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.01.21-08.56.42:140][  0]SourceControl: Info Source control is disabled
+[2017.01.21-08.56.42:493][  0]SourceControl: Info Source control is disabled
+[2017.01.21-08.56.42:556][  0]SourceControl: Info Source control is disabled
+[2017.01.21-08.56.42:635][  0]SourceControl: Info Source control is disabled
+[2017.01.21-08.56.45:606][  0]LogEngine: Initializing Engine...
+[2017.01.21-08.56.45:607][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.01.21-08.56.45:906][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.01.21-08.56.45:912][  0]LogInit: XAudio2 using 'Altoparlanti / Auricolari (IDT High Definition Audio CODEC)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.01.21-08.56.45:931][  0]LogInit: FAudioDevice initialized.
+[2017.01.21-08.56.45:963][  0]LogDerivedDataCache: Saved boot cache 0.03s 51MB C:/Users/Domenico/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc.
+[2017.01.21-08.56.45:968][  0]LogInit: Texture streaming: Enabled
+[2017.01.21-08.56.46:196][  0]LogInit: Transaction tracking system initialized
+[2017.01.21-08.56.46:643][  0]BlueprintLog: New page: Editor Load
+[2017.01.21-08.56.48:027][  0]LocalizationService: Info Localization service is disabled
+[2017.01.21-08.56.49:638][  0]LogConsoleResponse:Display: 
+[2017.01.21-08.56.49:875][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.01.21-08.56.49:875][  0]LogCook:Display: Mobile HDR setting 1
+[2017.01.21-08.56.51:031][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Domenico/Desktop/GGJ17/KillerWave/Content/' took 0.01s
+[2017.01.21-08.56.52:446][  0]SourceControl: Info Source control is disabled
+[2017.01.21-08.56.52:858][  0]LogFactory: FactoryCreateFile: PackFactory with PackFactory (0 0 C:/Program Files (x86)/Epic Games/4.14/FeaturePacks/StarterContent.upack)
+[2017.01.21-08.56.53:319][  0]LogPackFactory: Finished extracting 8 files (including 0 errors).
+[2017.01.21-08.56.53:493][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Floor_400x400.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Architecture/Floor_400x400.uasset"
+[2017.01.21-08.56.53:557][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Pillar_50x500.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Architecture/Pillar_50x500.uasset"
+[2017.01.21-08.56.53:632][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/SM_AssetPlatform.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Architecture/SM_AssetPlatform.uasset"
+[2017.01.21-08.56.53:662][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x200.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Architecture/Wall_400x200.uasset"
+[2017.01.21-08.56.53:696][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x300.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Architecture/Wall_400x300.uasset"
+[2017.01.21-08.56.53:769][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x400.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Architecture/Wall_400x400.uasset"
+[2017.01.21-08.56.53:858][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_500x500.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Architecture/Wall_500x500.uasset"
+[2017.01.21-08.56.53:913][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x300.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Architecture/Wall_Door_400x300.uasset"
+[2017.01.21-08.56.53:944][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x400.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Architecture/Wall_Door_400x400.uasset"
+[2017.01.21-08.56.53:993][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x300.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Architecture/Wall_Window_400x300.uasset"
+[2017.01.21-08.56.54:109][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x400.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Architecture/Wall_Window_400x400.uasset"
+[2017.01.21-08.56.54:400][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse01.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Audio/Collapse01.uasset"
+[2017.01.21-08.56.54:423][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse02.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Audio/Collapse02.uasset"
+[2017.01.21-08.56.54:519][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse_Cue.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Audio/Collapse_Cue.uasset"
+[2017.01.21-08.56.54:573][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion01.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Audio/Explosion01.uasset"
+[2017.01.21-08.56.54:600][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion02.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Audio/Explosion02.uasset"
+[2017.01.21-08.56.54:624][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion_Cue.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Audio/Explosion_Cue.uasset"
+[2017.01.21-08.56.54:708][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Audio/Fire01.uasset"
+[2017.01.21-08.56.54:737][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01_Cue.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Audio/Fire01_Cue.uasset"
+[2017.01.21-08.56.54:865][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Audio/Fire_Sparks01.uasset"
+[2017.01.21-08.56.54:883][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset"
+[2017.01.21-08.56.54:925][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Audio/Light01.uasset"
+[2017.01.21-08.56.54:942][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01_Cue.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Audio/Light01_Cue.uasset"
+[2017.01.21-08.56.54:981][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Audio/Light02.uasset"
+[2017.01.21-08.56.54:986][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02_Cue.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Audio/Light02_Cue.uasset"
+[2017.01.21-08.56.55:071][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Audio/Smoke01.uasset"
+[2017.01.21-08.56.55:113][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01_Cue.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Audio/Smoke01_Cue.uasset"
+[2017.01.21-08.56.55:142][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Background_Cue.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Audio/Starter_Background_Cue.uasset"
+[2017.01.21-08.56.55:415][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Birds01.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Audio/Starter_Birds01.uasset"
+[2017.01.21-08.56.56:817][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music01.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Audio/Starter_Music01.uasset"
+[2017.01.21-08.56.56:972][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music_Cue.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Audio/Starter_Music_Cue.uasset"
+[2017.01.21-08.56.57:367][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind05.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Audio/Starter_Wind05.uasset"
+[2017.01.21-08.56.57:540][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind06.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Audio/Starter_Wind06.uasset"
+[2017.01.21-08.56.57:655][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Audio/Steam01.uasset"
+[2017.01.21-08.56.57:670][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01_Cue.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Audio/Steam01_Cue.uasset"
+[2017.01.21-08.56.57:713][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset"
+[2017.01.21-08.56.57:734][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset"
+[2017.01.21-08.56.57:749][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset"
+[2017.01.21-08.56.57:757][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset"
+[2017.01.21-08.56.57:769][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset"
+[2017.01.21-08.56.57:788][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset"
+[2017.01.21-08.56.57:831][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset"
+[2017.01.21-08.56.57:882][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/BP_LightStudio.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Blueprints/BP_LightStudio.uasset"
+[2017.01.21-08.56.57:930][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset"
+[2017.01.21-08.56.57:953][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset"
+[2017.01.21-08.56.57:988][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset"
+[2017.01.21-08.56.58:019][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset"
+[2017.01.21-08.56.58:078][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset"
+[2017.01.21-08.56.58:160][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/Skybox.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Blueprints/Assets/Skybox.uasset"
+[2017.01.21-08.56.58:287][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset"
+[2017.01.21-08.56.58:373][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset"
+[2017.01.21-08.57.00:157][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset"
+[2017.01.21-08.57.00:537][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Advanced_Lighting.umap" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Maps/Advanced_Lighting.umap"
+[2017.01.21-08.57.00:681][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Minimal_Default.umap" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Maps/Minimal_Default.umap"
+[2017.01.21-08.57.01:862][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/StarterMap.umap" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Maps/StarterMap.umap"
+[2017.01.21-08.57.02:049][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_AssetPlatform.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_AssetPlatform.uasset"
+[2017.01.21-08.57.02:381][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Floor.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Basic_Floor.uasset"
+[2017.01.21-08.57.02:431][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Wall.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Basic_Wall.uasset"
+[2017.01.21-08.57.02:621][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset"
+[2017.01.21-08.57.02:752][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_New.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Brick_Clay_New.uasset"
+[2017.01.21-08.57.03:058][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset"
+[2017.01.21-08.57.03:345][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset"
+[2017.01.21-08.57.03:504][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset"
+[2017.01.21-08.57.03:577][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset"
+[2017.01.21-08.57.03:650][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset"
+[2017.01.21-08.57.03:671][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset"
+[2017.01.21-08.57.03:771][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset"
+[2017.01.21-08.57.03:800][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset"
+[2017.01.21-08.57.03:999][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Grime.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Concrete_Grime.uasset"
+[2017.01.21-08.57.04:255][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Panels.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Concrete_Panels.uasset"
+[2017.01.21-08.57.04:509][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Poured.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Concrete_Poured.uasset"
+[2017.01.21-08.57.04:547][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Tiles.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Concrete_Tiles.uasset"
+[2017.01.21-08.57.04:623][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Glass.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Glass.uasset"
+[2017.01.21-08.57.04:657][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Grass.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Ground_Grass.uasset"
+[2017.01.21-08.57.04:689][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Gravel.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Ground_Gravel.uasset"
+[2017.01.21-08.57.04:707][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Moss.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Ground_Moss.uasset"
+[2017.01.21-08.57.04:774][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset"
+[2017.01.21-08.57.04:834][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset"
+[2017.01.21-08.57.04:873][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Chrome.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Metal_Chrome.uasset"
+[2017.01.21-08.57.04:892][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Copper.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Metal_Copper.uasset"
+[2017.01.21-08.57.04:970][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Gold.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Metal_Gold.uasset"
+[2017.01.21-08.57.05:032][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Rust.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Metal_Rust.uasset"
+[2017.01.21-08.57.05:068][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Steel.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Metal_Steel.uasset"
+[2017.01.21-08.57.05:112][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Basalt.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Rock_Basalt.uasset"
+[2017.01.21-08.57.05:185][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset"
+[2017.01.21-08.57.05:203][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Sandstone.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Rock_Sandstone.uasset"
+[2017.01.21-08.57.05:232][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Slate.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Rock_Slate.uasset"
+[2017.01.21-08.57.05:270][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset"
+[2017.01.21-08.57.05:335][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset"
+[2017.01.21-08.57.05:391][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset"
+[2017.01.21-08.57.05:442][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Panel.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Tech_Panel.uasset"
+[2017.01.21-08.57.05:689][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Lake.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Water_Lake.uasset"
+[2017.01.21-08.57.05:821][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Ocean.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Water_Ocean.uasset"
+[2017.01.21-08.57.05:854][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset"
+[2017.01.21-08.57.05:955][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset"
+[2017.01.21-08.57.06:042][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Oak.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Wood_Oak.uasset"
+[2017.01.21-08.57.06:123][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Pine.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Wood_Pine.uasset"
+[2017.01.21-08.57.06:203][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Walnut.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Materials/M_Wood_Walnut.uasset"
+[2017.01.21-08.57.06:269][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Ambient_Dust.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Particles/P_Ambient_Dust.uasset"
+[2017.01.21-08.57.06:332][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Explosion.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Particles/P_Explosion.uasset"
+[2017.01.21-08.57.06:352][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Fire.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Particles/P_Fire.uasset"
+[2017.01.21-08.57.06:399][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Smoke.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Particles/P_Smoke.uasset"
+[2017.01.21-08.57.06:466][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Sparks.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Particles/P_Sparks.uasset"
+[2017.01.21-08.57.06:510][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Steam_Lit.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Particles/P_Steam_Lit.uasset"
+[2017.01.21-08.57.06:524][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Burst.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Particles/Materials/M_Burst.uasset"
+[2017.01.21-08.57.06:554][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset"
+[2017.01.21-08.57.06:572][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset"
+[2017.01.21-08.57.06:637][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset"
+[2017.01.21-08.57.06:667][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/m_flare_01.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Particles/Materials/m_flare_01.uasset"
+[2017.01.21-08.57.06:711][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset"
+[2017.01.21-08.57.06:743][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset"
+[2017.01.21-08.57.06:787][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset"
+[2017.01.21-08.57.07:026][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset"
+[2017.01.21-08.57.07:090][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Spark.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Particles/Materials/M_Spark.uasset"
+[2017.01.21-08.57.07:165][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/MaterialSphere.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Props/MaterialSphere.uasset"
+[2017.01.21-08.57.07:186][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Bush.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Props/SM_Bush.uasset"
+[2017.01.21-08.57.07:232][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Chair.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Props/SM_Chair.uasset"
+[2017.01.21-08.57.07:298][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_CornerFrame.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Props/SM_CornerFrame.uasset"
+[2017.01.21-08.57.07:344][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Couch.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Props/SM_Couch.uasset"
+[2017.01.21-08.57.07:399][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Door.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Props/SM_Door.uasset"
+[2017.01.21-08.57.07:418][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_DoorFrame.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Props/SM_DoorFrame.uasset"
+[2017.01.21-08.57.07:525][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_GlassWindow.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Props/SM_GlassWindow.uasset"
+[2017.01.21-08.57.07:571][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset"
+[2017.01.21-08.57.07:683][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Wall.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Props/SM_Lamp_Wall.uasset"
+[2017.01.21-08.57.08:181][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset"
+[2017.01.21-08.57.08:265][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Props/SM_PillarFrame.uasset"
+[2017.01.21-08.57.08:457][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame300.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Props/SM_PillarFrame300.uasset"
+[2017.01.21-08.57.08:566][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Rock.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Props/SM_Rock.uasset"
+[2017.01.21-08.57.08:641][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Shelf.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Props/SM_Shelf.uasset"
+[2017.01.21-08.57.08:671][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Stairs.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Props/SM_Stairs.uasset"
+[2017.01.21-08.57.08:756][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Statue.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Props/SM_Statue.uasset"
+[2017.01.21-08.57.08:867][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_TableRound.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Props/SM_TableRound.uasset"
+[2017.01.21-08.57.08:887][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_WindowFrame.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Props/SM_WindowFrame.uasset"
+[2017.01.21-08.57.08:927][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Bush.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Props/Materials/M_Bush.uasset"
+[2017.01.21-08.57.08:948][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Chair.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Props/Materials/M_Chair.uasset"
+[2017.01.21-08.57.08:978][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Door.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Props/Materials/M_Door.uasset"
+[2017.01.21-08.57.09:019][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Frame.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Props/Materials/M_Frame.uasset"
+[2017.01.21-08.57.09:047][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Lamp.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Props/Materials/M_Lamp.uasset"
+[2017.01.21-08.57.09:132][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset"
+[2017.01.21-08.57.09:166][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset"
+[2017.01.21-08.57.09:233][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Rock.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Props/Materials/M_Rock.uasset"
+[2017.01.21-08.57.09:258][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Shelf.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Props/Materials/M_Shelf.uasset"
+[2017.01.21-08.57.09:296][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Statue.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Props/Materials/M_Statue.uasset"
+[2017.01.21-08.57.09:325][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_StatueGlass.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Props/Materials/M_StatueGlass.uasset"
+[2017.01.21-08.57.09:348][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_TableRound.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Props/Materials/M_TableRound.uasset"
+[2017.01.21-08.57.09:378][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cone.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Shapes/Shape_Cone.uasset"
+[2017.01.21-08.57.09:435][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cube.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Shapes/Shape_Cube.uasset"
+[2017.01.21-08.57.09:460][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cylinder.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Shapes/Shape_Cylinder.uasset"
+[2017.01.21-08.57.09:511][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset"
+[2017.01.21-08.57.09:548][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Shapes/Shape_Pipe.uasset"
+[2017.01.21-08.57.09:958][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_180.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Shapes/Shape_Pipe_180.uasset"
+[2017.01.21-08.57.10:130][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_90.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Shapes/Shape_Pipe_90.uasset"
+[2017.01.21-08.57.10:161][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Plane.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Shapes/Shape_Plane.uasset"
+[2017.01.21-08.57.10:184][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset"
+[2017.01.21-08.57.10:267][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Sphere.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Shapes/Shape_Sphere.uasset"
+[2017.01.21-08.57.10:367][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Torus.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Shapes/Shape_Torus.uasset"
+[2017.01.21-08.57.10:385][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Shapes/Shape_Trim.uasset"
+[2017.01.21-08.57.10:436][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset"
+[2017.01.21-08.57.10:490][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset"
+[2017.01.21-08.57.10:513][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_TriPyramid.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Shapes/Shape_TriPyramid.uasset"
+[2017.01.21-08.57.10:588][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Tube.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Shapes/Shape_Tube.uasset"
+[2017.01.21-08.57.10:605][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_A.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Shapes/Shape_Wedge_A.uasset"
+[2017.01.21-08.57.10:661][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_B.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Shapes/Shape_Wedge_B.uasset"
+[2017.01.21-08.57.10:706][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_WideCapsule.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Shapes/Shape_WideCapsule.uasset"
+[2017.01.21-08.57.12:226][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset"
+[2017.01.21-08.57.12:359][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset"
+[2017.01.21-08.57.12:599][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset"
+[2017.01.21-08.57.13:480][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset"
+[2017.01.21-08.57.15:068][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset"
+[2017.01.21-08.57.16:135][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset"
+[2017.01.21-08.57.16:977][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset"
+[2017.01.21-08.57.18:080][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset"
+[2017.01.21-08.57.18:671][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset"
+[2017.01.21-08.57.18:993][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset"
+[2017.01.21-08.57.21:273][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset"
+[2017.01.21-08.57.22:253][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset"
+[2017.01.21-08.57.24:173][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset"
+[2017.01.21-08.57.24:213][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Burst_M.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Burst_M.uasset"
+[2017.01.21-08.57.24:681][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_D.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Bush_D.uasset"
+[2017.01.21-08.57.24:934][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Bush_N.uasset"
+[2017.01.21-08.57.24:969][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset"
+[2017.01.21-08.57.25:049][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset"
+[2017.01.21-08.57.25:176][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_M.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Chair_M.uasset"
+[2017.01.21-08.57.25:451][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Chair_N.uasset"
+[2017.01.21-08.57.25:487][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Checker_Noise_M.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Checker_Noise_M.uasset"
+[2017.01.21-08.57.25:989][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset"
+[2017.01.21-08.57.26:630][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset"
+[2017.01.21-08.57.27:525][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset"
+[2017.01.21-08.57.28:184][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset"
+[2017.01.21-08.57.28:463][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset"
+[2017.01.21-08.57.28:653][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset"
+[2017.01.21-08.57.28:845][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset"
+[2017.01.21-08.57.30:311][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset"
+[2017.01.21-08.57.32:408][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset"
+[2017.01.21-08.57.33:318][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset"
+[2017.01.21-08.57.34:124][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset"
+[2017.01.21-08.57.34:348][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset"
+[2017.01.21-08.57.35:391][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset"
+[2017.01.21-08.57.35:836][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset"
+[2017.01.21-08.57.36:051][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset"
+[2017.01.21-08.57.37:138][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset"
+[2017.01.21-08.57.37:300][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset"
+[2017.01.21-08.57.37:674][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset"
+[2017.01.21-08.57.37:708][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_M.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Door_M.uasset"
+[2017.01.21-08.57.38:066][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Door_N.uasset"
+[2017.01.21-08.57.38:081][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Dust_Particle_D.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Dust_Particle_D.uasset"
+[2017.01.21-08.57.38:176][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Explosion_SubUV.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Explosion_SubUV.uasset"
+[2017.01.21-08.57.38:353][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_SubUV.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Fire_SubUV.uasset"
+[2017.01.21-08.57.38:695][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset"
+[2017.01.21-08.57.39:105][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_M.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Frame_M.uasset"
+[2017.01.21-08.57.39:370][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Frame_N.uasset"
+[2017.01.21-08.57.39:413][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Gradinet_01.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Gradinet_01.uasset"
+[2017.01.21-08.57.39:830][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_D.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Ground_Grass_D.uasset"
+[2017.01.21-08.57.41:108][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Ground_Grass_N.uasset"
+[2017.01.21-08.57.41:528][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset"
+[2017.01.21-08.57.41:849][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset"
+[2017.01.21-08.57.42:121][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_ground_Moss_D.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_ground_Moss_D.uasset"
+[2017.01.21-08.57.42:383][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Moss_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Ground_Moss_N.uasset"
+[2017.01.21-08.57.43:194][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_M.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Lamp_M.uasset"
+[2017.01.21-08.57.43:419][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Lamp_N.uasset"
+[2017.01.21-08.57.44:007][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_MacroVariation.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_MacroVariation.uasset"
+[2017.01.21-08.57.48:975][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset"
+[2017.01.21-08.57.49:300][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Copper_D.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Metal_Copper_D.uasset"
+[2017.01.21-08.57.49:600][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_D.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Metal_Gold_D.uasset"
+[2017.01.21-08.57.51:327][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Metal_Gold_N.uasset"
+[2017.01.21-08.57.52:063][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_D.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Metal_Rust_D.uasset"
+[2017.01.21-08.57.55:961][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Metal_Rust_N.uasset"
+[2017.01.21-08.57.59:161][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_D.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Metal_Steel_D.uasset"
+[2017.01.21-08.58.00:458][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Metal_Steel_N.uasset"
+[2017.01.21-08.58.02:482][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset"
+[2017.01.21-08.58.02:708][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_M.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_RockMesh_M.uasset"
+[2017.01.21-08.58.03:454][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_RockMesh_N.uasset"
+[2017.01.21-08.58.04:393][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset"
+[2017.01.21-08.58.05:287][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset"
+[2017.01.21-08.58.05:825][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset"
+[2017.01.21-08.58.06:912][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset"
+[2017.01.21-08.58.07:782][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset"
+[2017.01.21-08.58.08:263][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_D.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Rock_Slate_D.uasset"
+[2017.01.21-08.58.08:508][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Rock_Slate_N.uasset"
+[2017.01.21-08.58.09:041][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset"
+[2017.01.21-08.58.09:216][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_M.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Shelf_M.uasset"
+[2017.01.21-08.58.09:321][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Shelf_N.uasset"
+[2017.01.21-08.58.09:369][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Single_Tile_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Single_Tile_N.uasset"
+[2017.01.21-08.58.09:852][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_SubUV.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Smoke_SubUV.uasset"
+[2017.01.21-08.58.10:090][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset"
+[2017.01.21-08.58.10:415][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Spark_Core.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Spark_Core.uasset"
+[2017.01.21-08.58.10:549][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_M.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Statue_M.uasset"
+[2017.01.21-08.58.10:630][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Statue_N.uasset"
+[2017.01.21-08.58.10:757][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_M.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_TableRound_M.uasset"
+[2017.01.21-08.58.11:129][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_TableRound_N.uasset"
+[2017.01.21-08.58.11:498][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_M.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Tech_Dot_M.uasset"
+[2017.01.21-08.58.11:652][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Tech_Dot_N.uasset"
+[2017.01.21-08.58.11:840][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset"
+[2017.01.21-08.58.11:854][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset"
+[2017.01.21-08.58.12:077][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_M.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Tech_Panel_M.uasset"
+[2017.01.21-08.58.12:231][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Tech_Panel_N.uasset"
+[2017.01.21-08.58.12:312][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_M.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Water_M.uasset"
+[2017.01.21-08.58.13:335][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Water_N.uasset"
+[2017.01.21-08.58.14:695][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset"
+[2017.01.21-08.58.15:798][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset"
+[2017.01.21-08.58.16:341][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset"
+[2017.01.21-08.58.16:957][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_D.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Wood_Oak_D.uasset"
+[2017.01.21-08.58.17:709][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Wood_Oak_N.uasset"
+[2017.01.21-08.58.18:192][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_D.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Wood_Pine_D.uasset"
+[2017.01.21-08.58.18:526][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Wood_Pine_N.uasset"
+[2017.01.21-08.58.18:598][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset"
+[2017.01.21-08.58.18:889][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset" to "../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset"
+[2017.01.21-08.58.25:969][  0]LogRenderer: Reallocating scene render targets to support 256x256 NumSamples 1 (Frame:2).
+[2017.01.21-08.58.31:327][  0]LogSavePackage: Save=535.33ms
+[2017.01.21-08.58.31:327][  0]LogSavePackage: Moving '../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Saved/Floor_400x4009DA2A6D74DFB06DD1BB15886328B66D6.tmp' to '../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Architecture/Floor_400x400.uasset'
+[2017.01.21-08.58.31:377][  0]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/StarterContent/Architecture/Floor_400x400.uasset
+[2017.01.21-08.58.31:377][  0]LogFeaturePack:Warning: Inserted 1 feature packs
+[2017.01.21-08.58.31:415][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/TopDownCPP/Maps/TopDownExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.01.21-08.58.31:415][  0]LightingResults: New page: Lighting Build
+[2017.01.21-08.58.31:465][  0]MapCheck: New page: Map Check
+[2017.01.21-08.58.31:465][  0]LightingResults: New page: Lighting Build
+[2017.01.21-08.58.34:636][  0]LogAIModule: Creating AISystem for world TopDownExampleMap
+[2017.01.21-08.58.35:292][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.01.21-08.58.36:539][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.01.21-08.58.36:582][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 42.566ms to complete.
+[2017.01.21-08.58.36:582][  0]LogFileHelpers: Loading map 'TopDownExampleMap' took 5.167
+[2017.01.21-08.58.43:893][  0]LogCollectionManager: Loaded 0 collections in 0.003327 seconds
+[2017.01.21-08.58.44:994][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Domenico/Desktop/GGJ17/KillerWave/Saved/Collections/' took 0.01s
+[2017.01.21-08.58.44:994][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Domenico/Desktop/GGJ17/KillerWave/Content/Developers/Domenico/Collections/' took 0.01s
+[2017.01.21-08.58.44:994][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Domenico/Desktop/GGJ17/KillerWave/Content/Collections/' took 0.01s
+[2017.01.21-08.58.44:994][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000003 seconds
+[2017.01.21-08.58.45:158][  0]LogContentBrowser: Native class hierarchy populated in 0.0466 seconds. Added 2204 classes and 445 folders.
+[2017.01.21-08.58.46:366][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.01.21-08.58.46:374][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.008 s
+[2017.01.21-08.58.46:376][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0021 seconds. Added 13 classes and 0 folders.
+[2017.01.21-08.58.46:523][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0014 seconds. Added 0 classes and 0 folders.
+[2017.01.21-08.58.53:212][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0019 seconds. Added 0 classes and 0 folders.
+[2017.01.21-08.58.54:295][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0021 seconds. Added 1 classes and 2 folders.
+[2017.01.21-08.58.55:335][  0]LogContentBrowser: Native class hierarchy updated for 'WorldBrowser' in 0.0019 seconds. Added 1 classes and 3 folders.
+[2017.01.21-08.59.00:875][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.01.21-08.59.01:657][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.01.21-08.59.01:903][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0017 seconds. Added 1 classes and 2 folders.
+[2017.01.21-08.59.01:903][  0]LogLoad: (Engine Initialization) Total time: 227.55 seconds
+[2017.01.21-08.59.01:903][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.42 seconds
+[2017.01.21-08.59.01:903][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.01.21-08.59.01:903][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.01.21-08.59.02:243][  0]LogOcInput: OculusInput pre-init called
+[2017.01.21-08.59.07:996][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.01.21-08.59.10:715][  0]LogRenderer: Reallocating scene render targets to support 688x396 NumSamples 1 (Frame:3).
+[2017.01.21-08.59.11:335][  2]LogAssetRegistry: Asset discovery search completed in 227.7461 seconds
+[2017.01.21-08.59.11:335][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2017.01.21-08.59.11:335][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000021 seconds (updated 0 objects)
+[2017.01.21-08.59.21:586][ 91]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.01.21-08.59.23:340][ 92]Cmd: QUIT_EDITOR
+[2017.01.21-08.59.23:437][ 92]LogExit: Preparing to exit.
+[2017.01.21-08.59.24:122][ 92]LogDirectoryWatcher: A directory notification for 'C:/Users/Domenico/Desktop/GGJ17/KillerWave/Content/' was aborted.
+[2017.01.21-08.59.24:222][ 92]LogExit: Editor shut down
+[2017.01.21-08.59.24:222][ 92]LogExit: Transaction tracking system shut down
+[2017.01.21-08.59.24:295][ 92]LogObj: Freed 0b from 0 cluster array pools.
+[2017.01.21-08.59.24:296][ 92]LogExit: Object subsystem successfully closed.
+[2017.01.21-08.59.24:395][ 92]LogD3D11RHI: Shutdown
+[2017.01.21-08.59.24:395][ 92]LogD3D11RHI: CleanupD3DDevice
+[2017.01.21-08.59.24:790][ 92]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.01.21-08.59.24:864][ 92]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.01.21-08.59.24:864][ 92]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B8A8065AB-461D-7FC5-83F9-49B90F4DDB8B%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.14.3-3249277%2B%2B%2BUE4%2BRelease-4.14&UserID=e43f21fc41e0a55044ca698cf0e2eb2d%7Cb07bc15f3b80443a8e40fc9cb02f085e%7C18b6ce98-727d-4000-b62f-bef9f6210099&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.01.21-08.59.24:864][ 92]LogHttp:Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
+[2017.01.21-08.59.25:388][ 92]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (249)
+[2017.01.21-08.59.25:388][ 92]LogModuleManager: Shutting down and abandoning module CrashTracker (248)
+[2017.01.21-08.59.25:388][ 92]LogModuleManager: Shutting down and abandoning module WorldBrowser (247)
+[2017.01.21-08.59.25:388][ 92]LogModuleManager: Shutting down and abandoning module SceneOutliner (246)
+[2017.01.21-08.59.25:407][ 92]LogModuleManager: Shutting down and abandoning module WidgetCarousel (245)
+[2017.01.21-08.59.25:407][ 92]LogModuleManager: Shutting down and abandoning module AddContentDialog (244)
+[2017.01.21-08.59.25:407][ 92]LogDirectoryWatcher: A directory notification for 'C:/Program Files (x86)/Epic Games/4.14/FeaturePacks/' was aborted.
+[2017.01.21-08.59.25:408][ 92]LogModuleManager: Shutting down and abandoning module GameplayTags (243)
+[2017.01.21-08.59.25:408][ 92]LogModuleManager: Shutting down and abandoning module EditorWidgets (242)
+[2017.01.21-08.59.25:408][ 92]LogModuleManager: Shutting down and abandoning module CollectionManager (241)
+[2017.01.21-08.59.25:408][ 92]LogDirectoryWatcher: A directory notification for 'C:/Users/Domenico/Desktop/GGJ17/KillerWave/Content/Collections/' was aborted.
+[2017.01.21-08.59.25:408][ 92]LogDirectoryWatcher: A directory notification for 'C:/Users/Domenico/Desktop/GGJ17/KillerWave/Content/Developers/Domenico/Collections/' was aborted.
+[2017.01.21-08.59.25:408][ 92]LogDirectoryWatcher: A directory notification for 'C:/Users/Domenico/Desktop/GGJ17/KillerWave/Saved/Collections/' was aborted.
+[2017.01.21-08.59.25:408][ 92]LogModuleManager: Shutting down and abandoning module StatsViewer (240)
+[2017.01.21-08.59.25:408][ 92]LogModuleManager: Shutting down and abandoning module FoliageEdit (239)
+[2017.01.21-08.59.25:408][ 92]LogModuleManager: Shutting down and abandoning module LandscapeEditor (238)
+[2017.01.21-08.59.25:409][ 92]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (237)
+[2017.01.21-08.59.25:409][ 92]LogModuleManager: Shutting down and abandoning module ActorPickerMode (236)
+[2017.01.21-08.59.25:409][ 92]LogModuleManager: Shutting down and abandoning module GeometryMode (235)
+[2017.01.21-08.59.25:409][ 92]LogModuleManager: Shutting down and abandoning module TextureAlignMode (234)
+[2017.01.21-08.59.25:409][ 92]LogModuleManager: Shutting down and abandoning module BspMode (233)
+[2017.01.21-08.59.25:409][ 92]LogModuleManager: Shutting down and abandoning module HardwareSurvey (232)
+[2017.01.21-08.59.25:409][ 92]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (231)
+[2017.01.21-08.59.25:409][ 92]LogModuleManager: Shutting down and abandoning module AutomationWorker (230)
+[2017.01.21-08.59.25:409][ 92]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (229)
+[2017.01.21-08.59.25:409][ 92]LogModuleManager: Shutting down and abandoning module PlacementMode (228)
+[2017.01.21-08.59.25:409][ 92]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (227)
+[2017.01.21-08.59.25:409][ 92]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (226)
+[2017.01.21-08.59.25:409][ 92]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (225)
+[2017.01.21-08.59.25:409][ 92]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (224)
+[2017.01.21-08.59.25:409][ 92]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (223)
+[2017.01.21-08.59.25:409][ 92]LogModuleManager: Shutting down and abandoning module Media (222)
+[2017.01.21-08.59.25:409][ 92]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (221)
+[2017.01.21-08.59.25:409][ 92]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (220)
+[2017.01.21-08.59.25:409][ 92]LogModuleManager: Shutting down and abandoning module CharacterAI (219)
+[2017.01.21-08.59.25:409][ 92]LogModuleManager: Shutting down and abandoning module SequenceRecorder (218)
+[2017.01.21-08.59.25:409][ 92]LogModuleManager: Shutting down and abandoning module AudioCapture (217)
+[2017.01.21-08.59.25:409][ 92]LogModuleManager: Shutting down and abandoning module SmartSnapping (216)
+[2017.01.21-08.59.25:409][ 92]LogModuleManager: Shutting down and abandoning module SessionServices (215)
+[2017.01.21-08.59.25:409][ 92]LogModuleManager: Shutting down and abandoning module ViewportSnapping (214)
+[2017.01.21-08.59.25:409][ 92]LogModuleManager: Shutting down and abandoning module ViewportInteraction (213)
+[2017.01.21-08.59.25:409][ 92]LogModuleManager: Shutting down and abandoning module LogVisualizer (212)
+[2017.01.21-08.59.25:409][ 92]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (211)
+[2017.01.21-08.59.25:409][ 92]LogModuleManager: Shutting down and abandoning module IntroTutorials (210)
+[2017.01.21-08.59.25:409][ 92]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (209)
+[2017.01.21-08.59.25:409][ 92]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (208)
+[2017.01.21-08.59.25:409][ 92]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (207)
+[2017.01.21-08.59.25:409][ 92]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (206)
+[2017.01.21-08.59.25:560][ 92]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (205)
+[2017.01.21-08.59.25:560][ 92]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (204)
+[2017.01.21-08.59.25:560][ 92]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (203)
+[2017.01.21-08.59.25:560][ 92]LogModuleManager: Shutting down and abandoning module InputBindingEditor (202)
+[2017.01.21-08.59.25:560][ 92]LogModuleManager: Shutting down and abandoning module NiagaraEditor (201)
+[2017.01.21-08.59.25:560][ 92]LogModuleManager: Shutting down and abandoning module MergeActors (200)
+[2017.01.21-08.59.25:560][ 92]LogModuleManager: Shutting down and abandoning module SizeMap (199)
+[2017.01.21-08.59.25:560][ 92]LogModuleManager: Shutting down and abandoning module TreeMap (198)
+[2017.01.21-08.59.25:560][ 92]LogModuleManager: Shutting down and abandoning module ReferenceViewer (197)
+[2017.01.21-08.59.25:560][ 92]LogModuleManager: Shutting down and abandoning module LocalizationService (196)
+[2017.01.21-08.59.25:560][ 92]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (195)
+[2017.01.21-08.59.25:560][ 92]LogModuleManager: Shutting down and abandoning module HardwareTargeting (194)
+[2017.01.21-08.59.25:560][ 92]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (193)
+[2017.01.21-08.59.25:560][ 92]LogModuleManager: Shutting down and abandoning module UndoHistory (192)
+[2017.01.21-08.59.25:560][ 92]LogModuleManager: Shutting down and abandoning module UserFeedback (191)
+[2017.01.21-08.59.25:560][ 92]LogModuleManager: Shutting down and abandoning module XmlParser (190)
+[2017.01.21-08.59.25:560][ 92]LogModuleManager: Shutting down and abandoning module Blutility (189)
+[2017.01.21-08.59.25:560][ 92]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (188)
+[2017.01.21-08.59.25:561][ 92]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (187)
+[2017.01.21-08.59.25:561][ 92]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (186)
+[2017.01.21-08.59.25:561][ 92]LogModuleManager: Shutting down and abandoning module SettingsEditor (185)
+[2017.01.21-08.59.25:561][ 92]LogModuleManager: Shutting down and abandoning module ProjectLauncher (184)
+[2017.01.21-08.59.25:561][ 92]LogModuleManager: Shutting down and abandoning module SessionFrontend (183)
+[2017.01.21-08.59.25:561][ 92]LogModuleManager: Shutting down and abandoning module ProfilerClient (182)
+[2017.01.21-08.59.25:561][ 92]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (181)
+[2017.01.21-08.59.25:561][ 92]LogModuleManager: Shutting down and abandoning module DeviceManager (180)
+[2017.01.21-08.59.25:603][ 92]LogModuleManager: Shutting down and abandoning module AutomationController (179)
+[2017.01.21-08.59.25:603][ 92]LogModuleManager: Shutting down and abandoning module AutomationWindow (178)
+[2017.01.21-08.59.25:603][ 92]LogModuleManager: Shutting down and abandoning module Layers (177)
+[2017.01.21-08.59.25:603][ 92]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (176)
+[2017.01.21-08.59.25:603][ 92]LogModuleManager: Shutting down and abandoning module DetailCustomizations (175)
+[2017.01.21-08.59.25:603][ 92]LogModuleManager: Shutting down and abandoning module PackagesDialog (174)
+[2017.01.21-08.59.25:643][ 92]LogModuleManager: Shutting down and abandoning module AnimGraph (173)
+[2017.01.21-08.59.25:643][ 92]LogModuleManager: Shutting down and abandoning module Persona (172)
+[2017.01.21-08.59.25:643][ 92]LogModuleManager: Shutting down and abandoning module Kismet (171)
+[2017.01.21-08.59.25:644][ 92]LogModuleManager: Shutting down and abandoning module GraphEditor (170)
+[2017.01.21-08.59.25:644][ 92]LogModuleManager: Shutting down and abandoning module ClassViewer (169)
+[2017.01.21-08.59.25:644][ 92]LogModuleManager: Shutting down and abandoning module Toolbox (168)
+[2017.01.21-08.59.25:644][ 92]LogModuleManager: Shutting down and abandoning module ModuleUI (167)
+[2017.01.21-08.59.25:644][ 92]LogModuleManager: Shutting down and abandoning module MovieSceneTools (166)
+[2017.01.21-08.59.25:644][ 92]LogModuleManager: Shutting down and abandoning module OutputLog (165)
+[2017.01.21-08.59.25:644][ 92]LogModuleManager: Shutting down and abandoning module GammaUI (164)
+[2017.01.21-08.59.25:644][ 92]LogModuleManager: Shutting down and abandoning module Documentation (163)
+[2017.01.21-08.59.25:644][ 92]LogModuleManager: Shutting down and abandoning module Niagara (162)
+[2017.01.21-08.59.25:644][ 92]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (161)
+[2017.01.21-08.59.25:644][ 92]LogModuleManager: Shutting down and abandoning module AnalyticsET (160)
+[2017.01.21-08.59.25:644][ 92]LogModuleManager: Shutting down and abandoning module PortalServices (159)
+[2017.01.21-08.59.25:644][ 92]LogModuleManager: Shutting down and abandoning module PortalRpc (158)
+[2017.01.21-08.59.25:644][ 92]LogModuleManager: Shutting down and abandoning module MessagingRpc (157)
+[2017.01.21-08.59.25:644][ 92]LogModuleManager: Shutting down and abandoning module GameplayDebugger (156)
+[2017.01.21-08.59.25:644][ 92]LogModuleManager: Shutting down and abandoning module AITestSuite (155)
+[2017.01.21-08.59.25:644][ 92]LogModuleManager: Shutting down and abandoning module AIModule (154)
+[2017.01.21-08.59.25:644][ 92]LogModuleManager: Shutting down and abandoning module ProfilerService (153)
+[2017.01.21-08.59.25:784][ 92]LogModuleManager: Shutting down and abandoning module TaskGraph (152)
+[2017.01.21-08.59.25:784][ 92]LogModuleManager: Shutting down and abandoning module SlateRemote (151)
+[2017.01.21-08.59.25:784][ 92]LogModuleManager: Shutting down and abandoning module SteamVRController (150)
+[2017.01.21-08.59.25:784][ 92]LogModuleManager: Shutting down and abandoning module SteamVR (149)
+[2017.01.21-08.59.25:784][ 92]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (148)
+[2017.01.21-08.59.25:784][ 92]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (147)
+[2017.01.21-08.59.25:784][ 92]LogModuleManager: Shutting down and abandoning module OculusLibrary (146)
+[2017.01.21-08.59.25:784][ 92]LogModuleManager: Shutting down and abandoning module OculusInput (145)
+[2017.01.21-08.59.25:784][ 92]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (144)
+[2017.01.21-08.59.25:784][ 92]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (143)
+[2017.01.21-08.59.25:784][ 92]LogModuleManager: Shutting down and abandoning module CableComponent (142)
+[2017.01.21-08.59.25:784][ 92]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (141)
+[2017.01.21-08.59.25:784][ 92]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (139)
+[2017.01.21-08.59.25:784][ 92]LogModuleManager: Shutting down and abandoning module ProceduralAudio (138)
+[2017.01.21-08.59.25:784][ 92]LogModuleManager: Shutting down and abandoning module MusicMacroLanguage (137)
+[2017.01.21-08.59.25:784][ 92]LogModuleManager: Shutting down and abandoning module MidiInterface (136)
+[2017.01.21-08.59.25:784][ 92]LogModuleManager: Shutting down and abandoning module MidiAssetEditor (135)
+[2017.01.21-08.59.25:784][ 92]LogModuleManager: Shutting down and abandoning module MidiAsset (134)
+[2017.01.21-08.59.25:784][ 92]LogModuleManager: Shutting down and abandoning module Midi (133)
+[2017.01.21-08.59.25:784][ 92]LogModuleManager: Shutting down and abandoning module HTML5Networking (132)
+[2017.01.21-08.59.25:784][ 92]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (131)
+[2017.01.21-08.59.25:784][ 92]LogModuleManager: Shutting down and abandoning module GeometryCache (130)
+[2017.01.21-08.59.25:784][ 92]LogModuleManager: Shutting down and abandoning module AlembicLibrary (129)
+[2017.01.21-08.59.25:784][ 92]LogModuleManager: Shutting down and abandoning module AlembicImporter (128)
+[2017.01.21-08.59.25:784][ 92]LogModuleManager: Shutting down and abandoning module SuperSearch (127)
+[2017.01.21-08.59.25:784][ 92]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (126)
+[2017.01.21-08.59.25:784][ 92]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (125)
+[2017.01.21-08.59.25:784][ 92]LogModuleManager: Shutting down and abandoning module PluginBrowser (124)
+[2017.01.21-08.59.25:784][ 92]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (123)
+[2017.01.21-08.59.25:784][ 92]LogModuleManager: Shutting down and abandoning module EpicSurvey (122)
+[2017.01.21-08.59.25:795][ 92]LogModuleManager: Shutting down and abandoning module DesktopPlatform (121)
+[2017.01.21-08.59.25:795][ 92]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (120)
+[2017.01.21-08.59.25:795][ 92]LogModuleManager: Shutting down and abandoning module UObjectPlugin (119)
+[2017.01.21-08.59.25:795][ 92]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (118)
+[2017.01.21-08.59.25:795][ 92]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (117)
+[2017.01.21-08.59.25:795][ 92]LogModuleManager: Shutting down and abandoning module SourceControl (116)
+[2017.01.21-08.59.25:795][ 92]LogModuleManager: Shutting down and abandoning module GitSourceControl (115)
+[2017.01.21-08.59.25:795][ 92]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (114)
+[2017.01.21-08.59.25:795][ 92]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (113)
+[2017.01.21-08.59.25:795][ 92]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (112)
+[2017.01.21-08.59.25:795][ 92]LogModuleManager: Shutting down and abandoning module MeshPaint (111)
+[2017.01.21-08.59.25:795][ 92]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (110)
+[2017.01.21-08.59.25:795][ 92]LogModuleManager: Shutting down and abandoning module HotReload (109)
+[2017.01.21-08.59.25:795][ 92]LogDirectoryWatcher: A directory notification for 'C:/Users/Domenico/Desktop/GGJ17/KillerWave/Binaries/Win64' was aborted.
+[2017.01.21-08.59.25:796][ 92]LogModuleManager: Shutting down and abandoning module MainFrame (108)
+[2017.01.21-08.59.25:796][ 92]LogModuleManager: Shutting down and abandoning module LevelEditor (107)
+[2017.01.21-08.59.25:797][ 92]LogModuleManager: Shutting down and abandoning module ContentBrowser (106)
+[2017.01.21-08.59.25:799][ 92]LogModuleManager: Shutting down and abandoning module Paper2DEditor (105)
+[2017.01.21-08.59.25:799][ 92]LogModuleManager: Shutting down and abandoning module KillerWave (104)
+[2017.01.21-08.59.25:799][ 92]LogModuleManager: Shutting down and abandoning module UdpMessaging (103)
+[2017.01.21-08.59.25:900][ 92]LogModuleManager: Shutting down and abandoning module TcpMessaging (102)
+[2017.01.21-08.59.26:001][ 92]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (101)
+[2017.01.21-08.59.26:001][ 92]LogModuleManager: Shutting down and abandoning module Paper2D (100)
+[2017.01.21-08.59.26:001][ 92]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (99)
+[2017.01.21-08.59.26:001][ 92]LogModuleManager: Shutting down and abandoning module WmfMedia (98)
+[2017.01.21-08.59.26:001][ 92]LogModuleManager: Shutting down and abandoning module MediaAssets (97)
+[2017.01.21-08.59.26:001][ 92]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (96)
+[2017.01.21-08.59.26:001][ 92]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (95)
+[2017.01.21-08.59.26:001][ 92]LogModuleManager: Shutting down and abandoning module VREditor (94)
+[2017.01.21-08.59.26:001][ 92]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (93)
+[2017.01.21-08.59.26:001][ 92]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (92)
+[2017.01.21-08.59.26:001][ 92]LogModuleManager: Shutting down and abandoning module FunctionalTesting (91)
+[2017.01.21-08.59.26:001][ 92]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (90)
+[2017.01.21-08.59.26:001][ 92]LogModuleManager: Shutting down and abandoning module Sequencer (89)
+[2017.01.21-08.59.26:001][ 92]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (88)
+[2017.01.21-08.59.26:001][ 92]LogModuleManager: Shutting down and abandoning module MessageLog (87)
+[2017.01.21-08.59.26:001][ 92]LogModuleManager: Shutting down and abandoning module AssetTools (86)
+[2017.01.21-08.59.26:001][ 92]LogModuleManager: Shutting down and abandoning module UMGEditor (85)
+[2017.01.21-08.59.26:001][ 92]LogModuleManager: Shutting down and abandoning module UMG (84)
+[2017.01.21-08.59.26:001][ 92]LogModuleManager: Shutting down and abandoning module SlateReflector (83)
+[2017.01.21-08.59.26:001][ 92]LogModuleManager: Shutting down and abandoning module Slate (82)
+[2017.01.21-08.59.26:001][ 92]LogModuleManager: Shutting down and abandoning module EditorStyle (81)
+[2017.01.21-08.59.26:003][ 92]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (80)
+[2017.01.21-08.59.26:004][ 92]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (79)
+[2017.01.21-08.59.26:004][ 92]LogModuleManager: Shutting down and abandoning module XAudio2 (78)
+[2017.01.21-08.59.26:004][ 92]LogModuleManager: Shutting down and abandoning module Networking (76)
+[2017.01.21-08.59.26:004][ 92]LogModuleManager: Shutting down and abandoning module Core (75)
+[2017.01.21-08.59.26:004][ 92]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (74)
+[2017.01.21-08.59.26:004][ 92]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.01.21-08.59.26:004][ 92]LogDirectoryWatcher: A directory notification for '../../../../../../Users/Domenico/Desktop/GGJ17/KillerWave/Content/' was aborted.
+[2017.01.21-08.59.26:004][ 92]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.01.21-08.59.26:004][ 92]LogModuleManager: Shutting down and abandoning module AssetRegistry (73)
+[2017.01.21-08.59.26:115][ 92]LogModuleManager: Shutting down and abandoning module KismetCompiler (72)
+[2017.01.21-08.59.26:115][ 92]LogModuleManager: Shutting down and abandoning module PhysXFormats (71)
+[2017.01.21-08.59.26:115][ 92]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (70)
+[2017.01.21-08.59.26:115][ 92]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (69)
+[2017.01.21-08.59.26:115][ 92]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (68)
+[2017.01.21-08.59.26:115][ 92]LogModuleManager: Shutting down and abandoning module PropertyEditor (67)
+[2017.01.21-08.59.26:125][ 92]LogModuleManager: Shutting down and abandoning module MeshUtilities (66)
+[2017.01.21-08.59.26:125][ 92]LogModuleManager: Shutting down and abandoning module DerivedDataCache (65)
+[2017.01.21-08.59.26:166][ 92]LogDerivedDataCache: Shutdown
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (64)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (63)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (62)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (61)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (60)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (59)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (58)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (57)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module ImageWrapper (56)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (55)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (54)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (53)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (52)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (51)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (50)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (49)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (48)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (47)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (46)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module Messaging (45)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (44)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (43)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (42)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (41)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (40)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (39)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (38)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (37)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (36)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (35)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (34)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (33)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (32)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (31)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (30)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (29)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (28)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (27)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (26)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module TargetPlatform (25)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module InputCore (24)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module Settings (23)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module OculusRift (22)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (21)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (20)
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (18)
+[2017.01.21-08.59.26:166][ 92]LogOnline:Display: Unloading online subsystem: NULL
+[2017.01.21-08.59.26:166][ 92]LogModuleManager: Shutting down and abandoning module SSL (17)
+[2017.01.21-08.59.26:168][ 92]LogModuleManager: Shutting down and abandoning module HTTP (16)
+[2017.01.21-08.59.26:168][ 92]LogModuleManager: Shutting down and abandoning module XMPP (15)
+[2017.01.21-08.59.26:168][ 92]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2017.01.21-08.59.26:168][ 92]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2017.01.21-08.59.26:168][ 92]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2017.01.21-08.59.26:168][ 92]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2017.01.21-08.59.26:169][ 92]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2017.01.21-08.59.26:169][ 92]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2017.01.21-08.59.26:169][ 92]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2017.01.21-08.59.26:169][ 92]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2017.01.21-08.59.26:169][ 92]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2017.01.21-08.59.26:169][ 92]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2017.01.21-08.59.26:169][ 92]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2017.01.21-08.59.26:169][ 92]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2017.01.21-08.59.26:169][ 92]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2017.01.21-08.59.26:169][ 92]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2017.01.21-08.59.26:170][ 92]LogExit: Exiting.
+[2017.01.21-08.59.26:177][ 92]Log file closed, 01/21/17 09:59:26
