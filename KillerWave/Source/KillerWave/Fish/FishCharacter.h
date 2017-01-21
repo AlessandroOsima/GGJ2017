@@ -33,6 +33,15 @@ public:
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "FishController", meta = (ClampMin = "0", UIMin = "0", ClampMax = "1", UIMax = "1"))
 		float SinusoidalAmplitude;
 
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "FishController")
+	FVector CurrentDirection;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "FishController")
+	int bSinDirection;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "FishController")
+	float bCurrentSin;
+
 protected:
 	/** Type of signal received.*/
 	int32 waveSignalReceived; //T
@@ -43,8 +52,8 @@ protected:
 	FVector bCurrentForward;
 	float bDistance;
 	float bCurrentSpeed;
-	int bSinDirection;
-	float bCurrentSin;
+	//int bSinDirection;
+	//float bCurrentSin;
 
 
 };
