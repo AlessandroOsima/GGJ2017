@@ -5,18 +5,17 @@
 
 AFishCharacter::AFishCharacter()
 {
-	bCurrentSin = 0;
+	CurrentSin = 0;
 	bSinDirection = 1;
 	PrimaryActorTick.bCanEverTick = true;
+	CurrentSpeed = MoveSpeed;
 }
 
 void AFishCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	if (waveSignalReceived == 1)
-	{
-		MoveUpdate(DeltaTime);
-	}	
+	
+	MoveUpdate(DeltaTime);
 }
 
 void AFishCharacter::SetMoveDestination(const FVector DestLocation, int waveSignal)
@@ -25,38 +24,78 @@ void AFishCharacter::SetMoveDestination(const FVector DestLocation, int waveSign
 	{
 		bDestination = DestLocation;
 		waveSignalReceived = waveSignal;
-		bCurrentSpeed = MoveSpeed;
-		bCurrentForward = GetActorForwardVector();
+		CurrentSpeed = MoveSpeed;
+		//bCurrentForward = GetActorForwardVector();
 		bDistance = FVector::Dist(bDestination, GetActorLocation());
-
-		bDirection = bDestination - GetActorLocation();
+		if (waveSignalReceived == 1)
+		{
+			bDirection = bDestination - GetActorLocation();
+		}
+		else if (waveSignalReceived == -1)
+		{
+			bDirection = GetActorLocation() - bDestination;
+		}
 		bDirection.Normalize();
 	}
 }
 void AFishCharacter::MoveUpdate(float DeltaTime)
 {
-	bCurrentForward = (bCurrentForward / RotateSpeed + bDirection);
+	bDistance = FVector::Dist(bDestination, GetActorLocation());
+
+	bCurrentForward = FMath::Lerp(bCurrentForward, bDirection, RotateSpeed);
+	bCurrentForward.Z = 0;
 	bCurrentForward.Normalize();
 
 	CurrentDirection = bCurrentForward;
 
 	if (SinusoidalSwim)
 	{
-		bCurrentSin = bCurrentSin + bSinDirection*DeltaTime*bCurrentSpeed;
-		if (bCurrentSin >= 1 || bCurrentSin <= -1)
+		CurrentSin = CurrentSin + bSinDirection*DeltaTime*SinSpeed;
+		if (CurrentSin >= 1)
 		{
-			bSinDirection = bSinDirection*-1;
+			bSinDirection = -1;
 		}
-		FVector Right = FVector(bCurrentForward.Y, -bCurrentForward.X, bCurrentForward.Z);
-		Right = Right*bCurrentSin*SinusoidalAmplitude;
+		else if(CurrentSin <= -1)
+		{
+			bSinDirection = 1;
+		}
+		FVector Right = FVector(CurrentDirection.Y, -CurrentDirection.X, CurrentDirection.Z);
+		Right = Right*CurrentSin*SinusoidalAmplitude;
 
-		CurrentDirection += Right;
+		CurrentDirection = CurrentDirection + Right;
 		CurrentDirection.Normalize();
 	}
 
 	SetActorRotation(CurrentDirection.Rotation());
 
-	bCurrentSpeed = bCurrentSpeed - MoveSpeed*(1 - AccelerationFactor);
-	FVector nextLocation = GetActorLocation() + GetActorForwardVector()*DeltaTime*bCurrentSpeed;
+	if (CurrentSpeed > MinSpeed)
+	{
+		CurrentSpeed = CurrentSpeed - MoveSpeed*(1 - AccelerationFactor)*DeltaTime;
+	}	
+	if (bDistance < DistanceToStop)
+	{
+		CurrentSpeed = CurrentSpeed - MoveSpeed*DeltaTime;
+	}
+	FVector nextLocation = GetActorLocation() + GetActorForwardVector()*DeltaTime*CurrentSpeed;
 	SetActorLocation(nextLocation);
+}
+
+void AFishCharacter::IlluminateFish(bool Illuminate)
+{
+	if (Illuminate)
+	{
+		OnIlluminate();
+	}
+	else
+	{
+		OnDeluminate();
+	}
+}
+
+void AFishCharacter::OnIlluminate_Implementation()
+{
+}
+
+void AFishCharacter::OnDeluminate_Implementation()
+{
 }

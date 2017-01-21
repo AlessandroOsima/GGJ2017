@@ -11,8 +11,14 @@ class AFishCharacter : public AActor
 public:
 	AFishCharacter();
 
-	UFUNCTION(BlueprintCallable, Category = "FishController")
+	UFUNCTION(BlueprintCallable, Category = "FishCharacter")
 	void SetMoveDestination(const FVector DestLocation, int waveSignal);
+	UFUNCTION(BlueprintCallable, Category = "FishCharacter")
+	void IlluminateFish(bool Illuminate);
+	UFUNCTION(BlueprintNativeEvent, Category = "FishCharacter")
+	void OnIlluminate();
+	UFUNCTION(BlueprintNativeEvent, Category = "FishCharacter")
+	void OnDeluminate();
 
 protected:
 	// Begin PlayerController interface
@@ -22,40 +28,43 @@ private:
 	void MoveUpdate(float DeltaTime);
 
 public:
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "FishController")
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "FishCharacter")
 		float MoveSpeed = 1;
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "FishController")
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "FishCharacter")
 		float RotateSpeed = 1;
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "FishController")
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "FishCharacter")
 		float AccelerationFactor = 1;
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "FishController")
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "FishCharacter")
 	bool SinusoidalSwim;
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "FishController", meta = (ClampMin = "0", UIMin = "0", ClampMax = "1", UIMax = "1"))
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "FishCharacter", meta = (ClampMin = "0", UIMin = "0", ClampMax = "1", UIMax = "1"))
 		float SinusoidalAmplitude;
 
-
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "FishController")
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "FishCharacter")
 	FVector CurrentDirection;
 
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "FishController")
-	int bSinDirection;
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "FishController")
-	float bCurrentSin;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "FishCharacter")
+	float DistanceToStop;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "FishCharacter")
+	float SinSpeed;
 
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "FishCharacter")
+	float MinSpeed;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "FishCharacter")
+	float CurrentSin;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "FishCharacter")
+	float CurrentSpeed;
 protected:
 	/** Type of signal received.*/
-	int32 waveSignalReceived; //T
+	int32 waveSignalReceived;
 
 	//Movement Parameters
 	FVector bDestination;
 	FVector bDirection;
 	FVector bCurrentForward;
 	float bDistance;
-	float bCurrentSpeed;
-	//int bSinDirection;
-	//float bCurrentSin;
-
-
+	//Sinusoidal Parameters
+	int bSinDirection;
 };
 
 

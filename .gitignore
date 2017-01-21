@@ -10,8 +10,11 @@
 *.swo
 *.h.pch
 *.gch
+*.sdf
+*.opendb
 
-Build/*
-Saved/*
-DerivedDataCache/*
+KillerWave/Intermediate/*
+KillerWave/Build/*
+KillerWave/Saved/*
+KillerWave/DerivedDataCache/*
 KillerWave/Content/TopDownCPP/*
