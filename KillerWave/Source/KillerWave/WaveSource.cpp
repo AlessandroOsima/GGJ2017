@@ -11,13 +11,16 @@ AWaveSource::AWaveSource()
 	PrimaryActorTick.bCanEverTick = true;
 
 	SphereCollision = CreateDefaultSubobject<USphereComponent>(TEXT("SphereCollision"));
+	RadarMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("RadarMesh"));
+
+	SetRootComponent(SphereCollision);
+	RadarMesh->AttachToComponent(SphereCollision, FAttachmentTransformRules::KeepRelativeTransform);
 }
 
 // Called when the game starts or when spawned
 void AWaveSource::BeginPlay()
 {
 	Super::BeginPlay();
-	
 }
 
 // Called every frame
@@ -35,6 +38,9 @@ void AWaveSource::Tick( float DeltaTime )
 		case FExpansionDirection::Expanding :
 		{
 			UnsclaedSphereRadiusMod = SphereCollision->GetUnscaledSphereRadius() + (ExpansionDelta * DeltaTime * 1);
+			float ScaleDelta = (ExpansionDelta * DeltaTime * ScaleDeltaMultiplier) * 1;
+			FVector CurrentScale = RadarMesh->GetComponentScale();
+			RadarMesh->SetWorldScale3D(FVector(CurrentScale.X + ScaleDelta, CurrentScale.Y + ScaleDelta, CurrentScale.Z));
 			ExpandTime += DeltaTime;
 			break;
 		}
@@ -49,6 +55,9 @@ void AWaveSource::Tick( float DeltaTime )
 		case FExpansionDirection::Reducing:
 		{
 			UnsclaedSphereRadiusMod = SphereCollision->GetUnscaledSphereRadius() + (ReductionDelta * DeltaTime * -1);
+			float ScaleDelta = (ExpansionDelta * DeltaTime * ScaleDeltaMultiplier) * -1;
+			FVector CurrentScale = RadarMesh->GetComponentScale();
+			RadarMesh->SetWorldScale3D(FVector(CurrentScale.X + ScaleDelta, CurrentScale.Y + ScaleDelta, CurrentScale.Z));
 			break;
 		}
 

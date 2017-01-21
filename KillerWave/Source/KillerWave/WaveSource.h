@@ -47,6 +47,9 @@ public:
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "WaveSource")
 	float StillTimeDuration;
 
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "WaveSource")
+	float ScaleDeltaMultiplier;
+
 	UPROPERTY(BlueprintReadOnly, Category = "WaveSource")
 	bool StartingPulse = false;
 
@@ -60,4 +63,7 @@ public:
 
 	UPROPERTY(BlueprintReadOnly, Category = "WaveSource")
 	float OriginalRadius = 0;
+
+	UPROPERTY(BlueprintReadWrite, VisibleAnywhere, Category = "WaveSource")
+	UStaticMeshComponent * RadarMesh;
 };
