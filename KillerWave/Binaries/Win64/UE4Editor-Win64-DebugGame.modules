@@ -1,0 +1,9 @@
+{
+	"Changelist" : 3249277,
+	"CompatibleChangelist" : 3195953,
+	"BuildId" : "cbbbaeba-f5f8-490a-abdd-318eddab5a46",
+	"Modules" : 
+	{
+		"KillerWave" : "UE4Editor-KillerWave-Win64-DebugGame.dll"
+	}
+}
