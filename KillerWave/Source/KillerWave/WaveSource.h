@@ -69,4 +69,7 @@ public:
 
 	UPROPERTY(BlueprintReadWrite, VisibleAnywhere, Category = "WaveSource")
 	UStaticMeshComponent * RadarMesh;
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "WaveSource")
+	void OnPulseEnd();
 };

@@ -83,6 +83,7 @@ void AWaveSource::Tick( float DeltaTime )
 		{
 			UnsclaedSphereRadiusMod = OriginalRadius;
 			StartingPulse = false;
+			OnPulseEnd();
 		}
 
 		SphereCollision->SetSphereRadius(UnsclaedSphereRadiusMod);
